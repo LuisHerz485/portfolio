@@ -1,0 +1,22 @@
+<nav
+    class="flex justify-around items-center bg-transparent p-8 border-0 border-b-2 border-sky-600">
+    <a
+        href="#inicio"
+        class="text-3xl text-sky-50 flex items-center cursor-pointer">
+        <strong>Wayless</strong>
+        <span class="text-sky-600">.</span>
+    </a>
+
+    <div class="text-sky-50">
+        <ul class="flex text-base font-medium">
+            @for (opcion of opciones; track $index) {
+                <li class="mr-4 cursor-pointer hover:text-gray-300">
+                    <a [href]="opcion.ref">{{ opcion.titulo }}</a>
+                </li>
+            }
+            <button (click)="escogerIdioma()" class="text-sky-600">
+                {{ idioma }}
+            </button>
+        </ul>
+    </div>
+</nav>
