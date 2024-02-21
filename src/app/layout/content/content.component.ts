@@ -3,6 +3,7 @@ import { QuienSoyComponent } from '../../components/quien-soy/quien-soy.componen
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { DescripcionComponent } from '../../components/descripcion/descripcion.component';
+import { ProyectosComponent } from '../../components/proyectos/proyectos.component';
 
 @Component({
     selector: 'app-content',
@@ -10,6 +11,7 @@ import { DescripcionComponent } from '../../components/descripcion/descripcion.c
     imports: [
         QuienSoyComponent,
         DescripcionComponent,
+        ProyectosComponent,
         HeaderComponent,
         FooterComponent,
     ],
