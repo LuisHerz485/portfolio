@@ -1,22 +1,29 @@
 <nav
-    class="flex justify-around items-center bg-transparent p-8 border-0 border-b-2 border-sky-600">
+    class="flex backdrop-blur-md justify-evenly items-center bg-transparent p-8 border-0 border-b-[1px] border-ternary">
     <a
         href="#inicio"
-        class="text-3xl text-sky-50 flex items-center cursor-pointer">
+        class="text-3xl text-secondary flex items-center cursor-pointer">
         <strong>Wayless</strong>
-        <span class="text-sky-600">.</span>
+        <span class="text-primary-500">.</span>
     </a>
 
-    <div class="text-sky-50">
+    <div class="text-secondary">
         <ul class="flex text-base font-medium">
             @for (opcion of opciones; track $index) {
-                <li class="mr-4 cursor-pointer hover:text-gray-300">
+                <li class="mr-4 cursor-pointer hover:text-primary-600">
                     <a [href]="opcion.ref">{{ opcion.titulo }}</a>
                 </li>
             }
-            <button (click)="escogerIdioma()" class="text-sky-600">
-                {{ idioma }}
-            </button>
         </ul>
+    </div>
+
+    <div class="text-sky-50">
+        <button (click)="escogerIdioma()" class="text-primary-400">
+            {{ idioma }}
+        </button>
+        <button
+            class="cursor-pointer bg-primary-400 border p-2 rounded-3xl min-w-9 ml-2 hover:bg-blue-600">
+            <fa-icon (click)="escogerModo()" [icon]="chooseMode"></fa-icon>
+        </button>
     </div>
 </nav>

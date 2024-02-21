@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 import { opcionesHeader } from '../../interfaces';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
     selector: 'app-header',
     standalone: true,
-    imports: [],
+    imports: [FontAwesomeModule],
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+    public normalMode = faMoon;
+    public darkMode = faSun;
+    public isDarkMode: boolean = false;
     public isSpanish: boolean = true;
     public opciones: opcionesHeader[] = [
         {
@@ -37,7 +43,15 @@ export class HeaderComponent {
         return this.isSpanish ? 'ES' : 'EN';
     }
 
+    get chooseMode(): IconProp {
+        return this.isDarkMode ? faMoon : faSun;
+    }
+
     public escogerIdioma(): void {
         this.isSpanish = !this.isSpanish;
+    }
+
+    public escogerModo(): void {
+        this.isDarkMode = !this.isDarkMode;
     }
 }
