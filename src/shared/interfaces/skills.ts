@@ -1,8 +1,33 @@
 export interface IInfoSkills {
+    basic?: IBasic;
     lenguajes?: ILenguaje;
     tools?: ITools;
     frameworks?: IFrameworks;
     bd?: IBd;
+    versionable?: IVersionable;
+    metology?: IMetology;
+    geo?: IGeo;
+}
+
+interface IBasic {
+    html: IDataSkill;
+    css: IDataSkill;
+    sass: IDataSkill;
+}
+
+interface IGeo {
+    arcgis?: IDataSkill;
+    qgis?: IDataSkill;
+}
+
+interface IVersionable {
+    git: IDataSkill;
+    github?: IDataSkill;
+    gitlab?: IDataSkill;
+}
+
+interface IMetology {
+    scrum: IDataSkill;
 }
 
 interface ILenguaje {
@@ -16,6 +41,14 @@ interface ITools {
     jwt?: IDataSkill;
     rxjs?: IDataSkill;
     tailwind?: IDataSkill;
+    socketio: IDataSkill;
+    bootstrap?: IDataSkill;
+    npm?: IDataSkill;
+    swagger?: IDataSkill;
+    leaflet?: IDataSkill;
+    aws: IDataSkill;
+    wordpress: IDataSkill;
+    jquery: IDataSkill;
 }
 
 interface IFrameworks {
@@ -23,6 +56,7 @@ interface IFrameworks {
     nodejs?: IDataSkill;
     react?: IDataSkill;
     springboot?: IDataSkill;
+    express?: IDataSkill;
 }
 
 interface IBd {

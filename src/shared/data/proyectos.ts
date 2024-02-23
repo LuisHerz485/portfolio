@@ -12,8 +12,10 @@ export const proyectos: IProyecto[] = [
         lugar: 'Peru',
         skills: [
             skill.frameworks?.angular,
+            skill.lenguajes?.java,
             skill.frameworks?.springboot,
             skill.bd?.oracledb,
+            skill.geo?.arcgis,
             skill.bd?.postgres,
             skill.tools?.jwt,
             skill.tools?.rxjs,
@@ -28,7 +30,7 @@ export const proyectos: IProyecto[] = [
         entidad: 'PolySoft',
         descripcion: 'lorem',
         descripcionCorta:
-            'Creacion de plataformas para e-commerce administrables',
+            'Creacion de plataformas para e-commerce y su CMS personalizado',
         lugar: 'Argentina',
         skills: [
             skill.frameworks?.angular,
@@ -51,6 +53,21 @@ export const proyectos: IProyecto[] = [
     },
     {
         id: 4,
+        titulo: 'Cuentas Claras',
+        entidad: 'Free Lance',
+        descripcion: 'lorem',
+        descripcionCorta: 'Template para paginas dedicadas a la contaduria',
+        lugar: 'Argentina',
+        skills: [
+            skill.frameworks?.angular,
+            skill.lenguajes?.typeScript,
+            skill.tools?.rxjs,
+            skill.tools?.bootstrap,
+        ],
+        imagenes: [],
+    },
+    {
+        id: 5,
         titulo: 'CryptoVote',
         entidad: 'Polysoft',
         descripcion: 'lorem',
@@ -61,6 +78,20 @@ export const proyectos: IProyecto[] = [
             skill.frameworks?.angular,
             skill.lenguajes?.typeScript,
             skill.tools?.rxjs,
+            skill.tools?.tailwind,
+        ],
+        imagenes: [],
+    },
+    {
+        id: 6,
+        titulo: 'Wayless Portfolio',
+        entidad: 'Free Lance',
+        descripcion: 'lorem',
+        descripcionCorta: 'Template para mi portafolio personal',
+        lugar: 'Peru',
+        skills: [
+            skill.frameworks?.angular,
+            skill.lenguajes?.typeScript,
             skill.tools?.tailwind,
         ],
         imagenes: [],

@@ -15,7 +15,7 @@
             grab-cursor="true">
             @for (proyecto of dataProyectos; track proyecto.id) {
                 <swiper-slide
-                    class="mb-20 max-w-[23rem] bg-white mr-2 border-2 rounded-lg hover:border-2 hover:border-primary-400 hover:shadow-lg">
+                    class="mb-20 min-w-[23rem] min-h-[28rem] bg-white mr-2 border-2 rounded-lg hover:border-2 hover:border-primary-400 hover:shadow-lg">
                     <article class="p-4">
                         <img [src]="proyecto.imagenes[0]" alt="" />
                         <h4 class="font-semibold">{{ proyecto.titulo }}</h4>

@@ -1,0 +1,41 @@
+<section class="m-12 pl-72 pr-72">
+    <div class="text-center font-semibold">
+        <h1 class="text-xl text-primary-400">Experiencia</h1>
+        <h2 class="text-4xl">Laborales</h2>
+    </div>
+
+    <div
+        class="mt-5 space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+        @for (experiencia of experiencias; track experiencia.id) {
+            <div
+                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div
+                    class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-primary-400 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                    <fa-icon [icon]="maletinIcon"></fa-icon>
+                </div>
+                <div
+                    class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-xl border border-slate-200 shadow">
+                    <div class="flex items-center justify-between space-x-2">
+                        <div class="font-bold text-slate-900">
+                            {{ experiencia.puesto }}
+                        </div>
+                        <time
+                            class="font-medium text-white bg-primary-400 rounded-full p-1 min-w-52 text-center text-xs"
+                            >{{ experiencia.periodo }}</time
+                        >
+                    </div>
+                    <div class="text-ternary-500 mb-1">
+                        {{ experiencia.entidad }}
+                    </div>
+                    <div class="text-slate-500">
+                        {{ experiencia.descripcionBreve }}
+                    </div>
+                    <div
+                        class="cursor-pointer mt-2 flex justify-end text-sm hover:text-primary-400">
+                        Ver Mas...
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
