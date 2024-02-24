@@ -3,6 +3,7 @@ import { opcionesHeader } from '../../interfaces';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { NavigationService } from '../../shared/services/navigation.service';
 
 @Component({
     selector: 'app-header',
@@ -13,6 +14,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 })
 export class HeaderComponent {
     public normalMode = faMoon;
+    public openMenu: boolean = false;
     public darkMode = faSun;
     public isDarkMode: boolean = false;
     public isSpanish: boolean = true;
@@ -39,6 +41,8 @@ export class HeaderComponent {
         },
     ];
 
+    constructor(private menuService: NavigationService) {}
+
     get idioma(): string {
         return this.isSpanish ? 'ES' : 'EN';
     }
@@ -53,5 +57,15 @@ export class HeaderComponent {
 
     public escogerModo(): void {
         this.isDarkMode = !this.isDarkMode;
+    }
+
+    public toggleMenu(): void {
+        this.openMenu = !this.openMenu;
+        this.menuService.updateBoolean(true);
+    }
+
+    closeModal() {
+        this.openMenu = !this.openMenu;
+        this.menuService.updateBoolean(false);
     }
 }

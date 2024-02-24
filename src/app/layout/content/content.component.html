@@ -1,11 +1,14 @@
-<header class="fixed top-0 z-50 w-full transition duration-300 ease-in-out">
+<div [class.overlay]="openMenu$ | async"></div>
+<header class="fixed top-0 z-10 w-full transition duration-300 ease-in-out">
     <app-header id=""></app-header>
 </header>
 <main class="relative">
     <app-quien-soy id="quiensoy"></app-quien-soy>
     <app-descripcion></app-descripcion>
     <app-proyectos id="proyectos"></app-proyectos>
+    <app-conocimientos></app-conocimientos>
     <app-timeline-trabajos id="experiencia"></app-timeline-trabajos>
+    <app-educacion></app-educacion>
 </main>
 <footer>
     <app-footer></app-footer>

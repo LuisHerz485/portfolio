@@ -7,6 +7,11 @@ export interface IInfoSkills {
     versionable?: IVersionable;
     metology?: IMetology;
     geo?: IGeo;
+    uiux: IUiUx;
+}
+
+interface IUiUx {
+    photoshop: IDataSkill;
 }
 
 interface IBasic {

@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { proyectos } from '../../../shared/data';
+import { proyectos } from '../../shared/data';
 import { CommonModule } from '@angular/common';
 import Swiper from 'swiper';
 
@@ -13,6 +13,33 @@ import Swiper from 'swiper';
 })
 export class ProyectosComponent {
     public dataProyectos = proyectos;
-
+    public breakpoints = {
+        280: {
+            slidesPerView: 1,
+        },
+        375: {
+            slidesPerView: 1,
+        },
+        390: {
+            slidesPerView: 1,
+        },
+        425: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 1,
+        },
+        1320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1700: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+    };
     constructor() {}
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { experiencia } from '../../../shared/data/experiencia';
+import { experiencia } from '../../shared/data/experiencia';
 
 @Component({
     selector: 'app-timeline-trabajos',

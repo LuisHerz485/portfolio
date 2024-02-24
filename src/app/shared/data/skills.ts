@@ -157,4 +157,10 @@ export const skill: IInfoSkills = {
             icono: '../../assets/icons/skills/qgis.svg',
         },
     },
+    uiux: {
+        photoshop: {
+            titulo: 'Photoshop',
+            icono: '../../assets/icons/skills/photoshop.svg',
+        },
+    },
 };

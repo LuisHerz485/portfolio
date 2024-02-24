@@ -18,7 +18,8 @@ module.exports = {
         'primary-800' : '#0032d0',
         'primary-900' : '#001bb7',
         'secondary-500' : '#090E34',
-        'ternary-500': '#959CB1'
+        'ternary-500': '#959CB1',
+        'background-primary' : '#090E34'
       },
     },
   },

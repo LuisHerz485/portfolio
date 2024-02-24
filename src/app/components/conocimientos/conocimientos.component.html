@@ -1,0 +1,113 @@
+<section
+    class="card-container min-h-[21rem] sm:min-h-96 bg-background-primary flex justify-center relative mb-44">
+    <div class="sm:m-12 sm:mb-48 sm:pl-72 sm:pr-72 pt-8 text-white p-12">
+        <h1 class="text-center text-xl font-semibold">Conocimientos</h1>
+        <p class="text-center text-ternary-500">
+            Cuento con conocimientos en otros frameworks tambien como
+        </p>
+        <div class="flex justify-center">
+            @for (conocimiento of conocimientos; track $index) {
+                <div
+                    class="tooltip filter grayscale contrast-200 hover:filter-none cursor-pointer">
+                    <img
+                        [src]="conocimiento?.icono"
+                        [alt]="conocimiento?.titulo"
+                        class="ml-3 mr-3 max-h-24" />
+                    <span class="tooltiptext text-xs">{{
+                        conocimiento?.titulo
+                    }}</span>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="sm:mt-72 mt-64 sm:pl-80 sm:pr-80 right-0 left-0 absolute">
+        <div class="bg-primary-400 rounded-lg sm:p-14 md:p-20 p-4 ml-2 mr-2">
+            <h3
+                class="text-center sm:pl-0 sm:pr-0 lg:pl-44 lg:pr-44 sm:text-3xl text-white font-semibold mb-4">
+                Es momento de que te pongas en contacto conmigo para poder
+                conversar
+            </h3>
+            <div class="flex justify-center">
+                <a
+                    type="button"
+                    href="https://api.whatsapp.com/send?phone={{
+                        this.sharedConstans.telefono
+                    }}&text={{ this.sharedConstans.mensajeWsp }}"
+                    target="_blank"
+                    class="mr-2 flex items-center justify-center min-w-44 rounded-xl bg-[#25D366] p-2 hover:shadow-xl hover:bg-[#20bb59]">
+                    <img
+                        src="../../../assets/icons/generics/whatsapp.svg"
+                        alt=""
+                        class="max-w-10" />
+                    <p class="text-white font-medium ml-2">Whatsapp</p>
+                </a>
+                <a
+                    type="button"
+                    href="mailto:luis.hernandez.albia@gmail.com"
+                    class="mr-2 flex items-center justify-center min-w-44 rounded-xl bg-primary-800 p-2 hover:shadow-xl hover:bg-primary-900">
+                    <img
+                        src="../../../assets/icons/generics/email.svg"
+                        alt=""
+                        class="max-w-10 filter invert" />
+                    <p class="text-white font-medium ml-2">Email</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <svg
+        width="818"
+        height="286"
+        viewBox="0 0 818 286"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="fa absolute hidden sm:hidden">
+        <circle
+            cx="409"
+            cy="409"
+            r="408.5"
+            stroke="url(#paint0_linear_0:1)"></circle>
+        <circle
+            cx="409"
+            cy="409"
+            r="349.5"
+            stroke="url(#paint1_linear_0:1)"></circle>
+        <defs>
+            <linearGradient
+                id="paint0_linear_0:1"
+                x1="-34.5"
+                y1="291.5"
+                x2="851"
+                y2="291.5"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" stop-opacity="0.35"></stop>
+                <stop
+                    offset="0.218415"
+                    stop-color="white"
+                    stop-opacity="0"></stop>
+                <stop
+                    offset="0.728079"
+                    stop-color="white"
+                    stop-opacity="0"></stop>
+                <stop offset="1" stop-color="white" stop-opacity="0.35"></stop>
+            </linearGradient>
+            <linearGradient
+                id="paint1_linear_0:1"
+                x1="29.4768"
+                y1="308.45"
+                x2="787.24"
+                y2="308.45"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" stop-opacity="0.35"></stop>
+                <stop
+                    offset="0.218415"
+                    stop-color="white"
+                    stop-opacity="0"></stop>
+                <stop
+                    offset="0.777261"
+                    stop-color="white"
+                    stop-opacity="0"></stop>
+                <stop offset="1" stop-color="white" stop-opacity="0.35"></stop>
+            </linearGradient>
+        </defs>
+    </svg>
+</section>
