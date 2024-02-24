@@ -1,33 +1,14 @@
-<!-- header.component.html -->
 <nav
     [class.bg-current]="openMenu"
     [class.justify-center]="openMenu"
-    [class.justify-evenly]="!openMenu"
-    class="flex backdrop-blur-md items-center bg-[rgba(255,255,255,0.57)] p-8 border-0 border-b-[1px] border-ternary">
+    [class.justify-between]="!openMenu"
+    class="flex backdrop-blur-md items-center sm:justify-evenly bg-[rgba(255,255,255,0.57)] p-8 border-0 border-b-[1px] border-ternary">
     <a
         href="#inicio"
         class="text-3xl text-secondary flex items-center cursor-pointer">
         <strong [class.text-white]="openMenu">Wayless</strong>
         <span class="text-primary-500">.</span>
     </a>
-
-    @if (!openMenu) {
-        <div class="lg:hidden">
-            <button (click)="toggleMenu()">
-                <svg
-                    class="fill-current h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M4 6h16M4 12h16m-7 6h7"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </button>
-        </div>
-    }
 
     <div class="hidden lg:flex space-x-4">
         <ul class="flex text-base font-medium">
@@ -67,18 +48,43 @@
                         >
                     </li>
                 }
+                <div class="flex">
+                    <button
+                        (click)="escogerIdioma()"
+                        class="text-primary-400 m-4">
+                        {{ idioma }}
+                    </button>
+                    <button
+                        class="cursor-pointer bg-primary-400 border m-4 p-2 rounded-3xl min-w-9 ml-2 hover:bg-blue-600"
+                        (click)="escogerModo()">
+                        <fa-icon [icon]="chooseMode"></fa-icon>
+                    </button>
+                </div>
             </ul>
         </div>
     }
 
-    <div class="text-sky-50" [class.hidden]="openMenu">
-        <button (click)="escogerIdioma()" class="text-primary-400">
-            {{ idioma }}
-        </button>
-        <button
-            class="cursor-pointer bg-primary-400 border p-2 rounded-3xl min-w-9 ml-2 hover:bg-blue-600"
-            (click)="escogerModo()">
-            <fa-icon [icon]="chooseMode"></fa-icon>
-        </button>
+    @if (!openMenu) {
+        <div class="lg:hidden">
+            <button (click)="toggleMenu()">
+                <img
+                    src="../../../assets/icons/generics/menu.svg"
+                    alt=""
+                    class="max-h-5" />
+            </button>
+        </div>
+    }
+
+    <div class="hidden sm:block">
+        <div class="text-sky-50" [class.hidden]="openMenu">
+            <button (click)="escogerIdioma()" class="text-primary-400">
+                {{ idioma }}
+            </button>
+            <button
+                class="cursor-pointer bg-primary-400 border p-2 rounded-3xl min-w-9 ml-2 hover:bg-blue-600"
+                (click)="escogerModo()">
+                <fa-icon [icon]="chooseMode"></fa-icon>
+            </button>
+        </div>
     </div>
 </nav>
