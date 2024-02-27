@@ -9,6 +9,7 @@ import { EducacionComponent } from '../../components/educacion/educacion.compone
 import { ConocimientosComponent } from '../../components/conocimientos/conocimientos.component';
 import { NavigationService } from '../../shared/services/navigation.service';
 import { AsyncPipe } from '@angular/common';
+import { TapToTopComponent } from '../../shared/components/tap-to-top/tap-to-top.component';
 
 @Component({
     selector: 'app-content',
@@ -23,6 +24,7 @@ import { AsyncPipe } from '@angular/common';
         EducacionComponent,
         ConocimientosComponent,
         AsyncPipe,
+        TapToTopComponent,
     ],
     providers: [],
     templateUrl: './content.component.html',
