@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { TapToTopService } from '../../services/tap-to-top.service';
 
 @Component({
     selector: 'app-tap-to-top',
@@ -9,12 +10,10 @@ import { Component, HostListener } from '@angular/core';
 export class TapToTopComponent {
     public showButton: boolean = false;
 
+    constructor(public tap2TopService: TapToTopService) {}
+
     @HostListener('window:scroll', [])
     onWindowScroll() {
         this.showButton = window.scrollY > 600;
-    }
-
-    scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 }

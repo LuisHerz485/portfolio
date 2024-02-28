@@ -4,6 +4,7 @@ import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { NavigationService } from '../../shared/services/navigation.service';
+import { TapToTopService } from '../../shared/services/tap-to-top.service';
 
 @Component({
     selector: 'app-header',
@@ -21,27 +22,30 @@ export class HeaderComponent {
     public opciones: opcionesHeader[] = [
         {
             titulo: 'Inicio',
-            ref: '#inicio',
+            ref: 'inicio',
         },
         {
-            titulo: 'Quien soy',
-            ref: '#quiensoy',
+            titulo: 'Acerca de Mi',
+            ref: 'acercademi',
         },
         {
             titulo: 'Proyectos',
-            ref: '#proyectos',
+            ref: 'proyectos',
         },
         {
-            titulo: 'Skills',
-            ref: '#skills',
+            titulo: 'Conocimientos',
+            ref: 'conocimientos',
         },
         {
-            titulo: 'Contactame',
-            ref: '#contacto',
+            titulo: 'Educacion',
+            ref: 'educacion',
         },
     ];
 
-    constructor(private menuService: NavigationService) {}
+    constructor(
+        private menuService: NavigationService,
+        public Tap2TopService: TapToTopService
+    ) {}
 
     get idioma(): string {
         return this.isSpanish ? 'ES' : 'EN';
@@ -64,8 +68,13 @@ export class HeaderComponent {
         this.menuService.updateBoolean(true);
     }
 
-    closeModal() {
+    public closeModal() {
         this.openMenu = !this.openMenu;
         this.menuService.updateBoolean(false);
+    }
+
+    public scrollAndClose(elementId: string): void {
+        this.Tap2TopService.scrollToDiv(elementId);
+        this.closeModal();
     }
 }

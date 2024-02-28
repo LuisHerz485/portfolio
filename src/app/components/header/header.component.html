@@ -3,9 +3,7 @@
     [class.justify-center]="openMenu"
     [class.justify-between]="!openMenu"
     class="flex backdrop-blur-md items-center sm:justify-evenly bg-[rgba(255,255,255,0.57)] p-8 border-0 border-b-[1px] border-ternary">
-    <a
-        href="#inicio"
-        class="text-3xl text-secondary flex items-center cursor-pointer">
+    <a class="text-3xl text-secondary flex items-center cursor-pointer">
         <strong [class.text-white]="openMenu">Wayless</strong>
         <span class="text-primary-500">.</span>
     </a>
@@ -14,7 +12,9 @@
         <ul class="flex text-base font-medium">
             @for (opcion of opciones; track $index) {
                 <li class="mr-4 cursor-pointer hover:text-primary-600">
-                    <a [href]="opcion.ref">{{ opcion.titulo }}</a>
+                    <a (click)="Tap2TopService.scrollToDiv(opcion.ref)">{{
+                        opcion.titulo
+                    }}</a>
                 </li>
             }
         </ul>
@@ -41,8 +41,7 @@
                 @for (opcion of opciones; track $index) {
                     <li class="my-6">
                         <a
-                            (click)="closeModal()"
-                            [href]="opcion.ref"
+                            (click)="scrollAndClose(opcion.ref)"
                             class="hover:text-primary-600"
                             >{{ opcion.titulo }}</a
                         >

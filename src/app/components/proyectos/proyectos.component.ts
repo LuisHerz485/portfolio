@@ -28,9 +28,11 @@ export class ProyectosComponent {
         },
         768: {
             slidesPerView: 1,
+            spaceBetween: 10,
         },
         1024: {
-            slidesPerView: 1,
+            slidesPerView: 2,
+            spaceBetween: 10,
         },
         1320: {
             slidesPerView: 2,
