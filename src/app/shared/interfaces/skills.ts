@@ -7,7 +7,7 @@ export interface IInfoSkills {
     versionable?: IVersionable;
     metology?: IMetology;
     geo?: IGeo;
-    uiux: IUiUx;
+    uiux?: IUiUx;
 }
 
 interface IUiUx {

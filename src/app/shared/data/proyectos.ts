@@ -6,7 +6,8 @@ export const proyectos: IProyecto[] = [
         id: 1,
         titulo: 'Sinpad v3',
         entidad: 'Instituto Nacional de Defensa Civil',
-        descripcion: 'lorem',
+        descripcion:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita optio quibusdam explicabo? Beatae maiores, aliquam, similique esse reiciendis dolorem veniam magnam laborum suscipit nihil, sapiente natus iure. Necessitatibus, facere nihil.',
         descripcionCorta:
             'Proyecto gubernamental para la gestion de desastres naturales',
         lugar: 'Peru',
@@ -22,7 +23,12 @@ export const proyectos: IProyecto[] = [
             skill.lenguajes?.typeScript,
             skill.lenguajes?.javaScript,
         ],
-        imagenes: ['../../assets/img/slides/sinpad/sinpad1.webp'],
+        imagenes: [
+            '../../../assets/img/slides/sinpad/sinpad1.png',
+            '../../../assets/img/slides/sinpad/sinpad2.png',
+            '../../../assets/img/slides/sinpad/sinpad3.png',
+            '../../../assets/img/slides/sinpad/sinpad4.png',
+        ],
     },
     {
         id: 2,
@@ -39,7 +45,13 @@ export const proyectos: IProyecto[] = [
             skill.tools?.jwt,
             skill.tools?.rxjs,
         ],
-        imagenes: [],
+        imagenes: [
+            '../../../assets/img/slides/evanoz/evanoz1.png',
+            '../../../assets/img/slides/evanoz/evanoz2.png',
+            '../../../assets/img/slides/evanoz/evanoz3.png',
+            '../../../assets/img/slides/evanoz/evanoz4.png',
+            '../../../assets/img/slides/evanoz/evanoz5.png',
+        ],
     },
     {
         id: 3,
@@ -49,7 +61,10 @@ export const proyectos: IProyecto[] = [
         descripcionCorta: 'Sistema de gestion de almacenes para platanitos ',
         lugar: 'Peru',
         skills: [skill.lenguajes?.php, skill.bd?.mysql],
-        imagenes: [],
+        imagenes: [
+            '../../../assets/img/slides/tutati/tutati1.png',
+            '../../../assets/img/slides/tutati/tutati2.png',
+        ],
     },
     {
         id: 4,
@@ -64,7 +79,12 @@ export const proyectos: IProyecto[] = [
             skill.tools?.rxjs,
             skill.tools?.bootstrap,
         ],
-        imagenes: [],
+        imagenes: [
+            '../../../assets/img/slides/cuentas-claras/cuentas1.png',
+            '../../../assets/img/slides/cuentas-claras/cuentas2.png',
+            '../../../assets/img/slides/cuentas-claras/cuentas3.png',
+            '../../../assets/img/slides/cuentas-claras/cuentas4.png',
+        ],
     },
     {
         id: 5,
@@ -80,7 +100,11 @@ export const proyectos: IProyecto[] = [
             skill.tools?.rxjs,
             skill.tools?.tailwind,
         ],
-        imagenes: [],
+        imagenes: [
+            '../../../assets/img/slides/cryptovote/crypto1.png',
+            '../../../assets/img/slides/cryptovote/crypto2.png',
+            '../../../assets/img/slides/cryptovote/crypto3.png',
+        ],
     },
     {
         id: 6,
@@ -94,6 +118,11 @@ export const proyectos: IProyecto[] = [
             skill.lenguajes?.typeScript,
             skill.tools?.tailwind,
         ],
-        imagenes: [],
+        imagenes: [
+            '../../../assets/img/slides/wayless/wayless1.png',
+            '../../../assets/img/slides/wayless/wayless2.png',
+            '../../../assets/img/slides/wayless/wayless3.png',
+            '../../../assets/img/slides/wayless/wayless4.png',
+        ],
     },
 ];

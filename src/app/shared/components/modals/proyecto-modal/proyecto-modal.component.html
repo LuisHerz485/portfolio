@@ -1,0 +1,54 @@
+<section class="p-0">
+    <div
+        class="fixed z-10 left-[80%] md:left-[85%] lg:left-[85%] xl:left-[87%] m-2">
+        <button class="rounded-full p-1 bg-white" (click)="closeModal()">
+            <fa-icon [icon]="closeIcon"></fa-icon>
+        </button>
+    </div>
+    <div class="lg:flex lg:items-center w-full">
+        <swiper-container
+            slides-per-view="1"
+            navigation="true"
+            class="mt-7 md:mb-4 lg:m-0 lg:w-1/2 max-h-[40vw]">
+            @for (imagen of data.imagenes; track $index) {
+                <swiper-slide class="w-full overflow-hidden">
+                    <img
+                        [src]="imagen"
+                        alt=""
+                        class="lg:h-[40rem] object-cover overflow-hidden" />
+                </swiper-slide>
+            }
+        </swiper-container>
+
+        <div class="lg:w-1/2 h-full p-4">
+            <div class="p-4">
+                <h2 class="text-2xl font-semibold mb-2">Informacion</h2>
+                <hr />
+                <p class="text-xl mt-4">Proyecto {{ data.titulo }}</p>
+                <p class="text-md text-ternary-500">
+                    {{ data.entidad }} - {{ data.lugar }}
+                </p>
+                <p class="mt-4">{{ data.descripcion }}</p>
+
+                <h3 class="mt-4">Technical Skill</h3>
+                <div class="grid gap-1 grid-cols-5">
+                    @for (skill of data.skills; track $index) {
+                        <div class="tooltip">
+                            <img
+                                [src]="skill.icono"
+                                alt=""
+                                class="md:max-h-12 lg:max-h-16" />
+                            <span class="tooltiptext"
+                                >{{ skill.titulo }}
+                                @if (skill.plugins) {
+                                    <br />
+                                    <span>{{ skill.plugins }}</span>
+                                }
+                            </span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
