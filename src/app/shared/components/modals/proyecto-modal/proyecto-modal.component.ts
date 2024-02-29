@@ -1,4 +1,9 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, Inject } from '@angular/core';
+import {
+    CUSTOM_ELEMENTS_SCHEMA,
+    Component,
+    Inject,
+    inject,
+} from '@angular/core';
 import { DialogRef } from '@angular/cdk/dialog';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
@@ -15,10 +20,9 @@ import { IProyecto } from '../../../interfaces';
 })
 export class ProyectoModalComponent {
     public closeIcon = faClose;
-    constructor(
-        @Inject(MAT_DIALOG_DATA) public data: IProyecto,
-        private dlgRef: DialogRef
-    ) {}
+    constructor(@Inject(MAT_DIALOG_DATA) public data: IProyecto) {}
+
+    private dlgRef = inject(DialogRef);
 
     public closeModal(): void {
         this.dlgRef.close(false);

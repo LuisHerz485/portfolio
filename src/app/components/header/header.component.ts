@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { opcionesHeader } from '../../interfaces';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -42,10 +42,8 @@ export class HeaderComponent {
         },
     ];
 
-    constructor(
-        private menuService: NavigationService,
-        public Tap2TopService: TapToTopService
-    ) {}
+    private menuService = inject(NavigationService);
+    public tap2TopService = inject(TapToTopService);
 
     get idioma(): string {
         return this.isSpanish ? 'ES' : 'EN';
@@ -74,7 +72,7 @@ export class HeaderComponent {
     }
 
     public scrollAndClose(elementId: string): void {
-        this.Tap2TopService.scrollToDiv(elementId);
+        this.tap2TopService.scrollToDiv(elementId);
         this.closeModal();
     }
 }

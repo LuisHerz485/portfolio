@@ -4,10 +4,7 @@ import { Injectable } from '@angular/core';
     providedIn: 'root',
 })
 export class TapToTopService {
-    constructor() {}
-
     public scrollToDiv(elementId: string): void {
-        console.log('TapTotoP');
         const element = document.getElementById(elementId);
         const offset = 200;
 

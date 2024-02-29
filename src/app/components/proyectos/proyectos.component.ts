@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
 import { proyectos } from '../../shared/data';
 import { CommonModule } from '@angular/common';
 import { ProyectoModalComponent } from '../../shared/components/modals/proyecto-modal/proyecto-modal.component';
@@ -47,9 +47,8 @@ export class ProyectosComponent {
             spaceBetween: 10,
         },
     };
-    constructor(private dialogRef: MatDialog) {
-        console.log(this.dataProyectos);
-    }
+
+    private dialogRef = inject(MatDialog);
 
     public openModalProyecto(proyecto: IProyecto) {
         this.dialogRef.open(ProyectoModalComponent, {

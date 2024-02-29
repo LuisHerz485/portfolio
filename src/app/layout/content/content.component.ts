@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { QuienSoyComponent } from '../../components/quien-soy/quien-soy.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
@@ -31,7 +31,7 @@ import { TapToTopComponent } from '../../shared/components/tap-to-top/tap-to-top
     styleUrl: './content.component.scss',
 })
 export class ContentComponent {
-    constructor(private menuService: NavigationService) {}
+    private menuService = inject(NavigationService);
 
     openMenu$ = this.menuService.myBoolean$;
 }

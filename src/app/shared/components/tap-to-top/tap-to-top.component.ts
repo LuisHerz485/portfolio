@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { TapToTopService } from '../../services/tap-to-top.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { TapToTopService } from '../../services/tap-to-top.service';
 export class TapToTopComponent {
     public showButton: boolean = false;
 
-    constructor(public tap2TopService: TapToTopService) {}
+    public tap2TopService = inject(TapToTopService);
 
     @HostListener('window:scroll', [])
     onWindowScroll() {

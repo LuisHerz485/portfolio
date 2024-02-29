@@ -12,7 +12,7 @@
         <ul class="flex text-base font-medium">
             @for (opcion of opciones; track $index) {
                 <li class="mr-4 cursor-pointer hover:text-primary-600">
-                    <a (click)="Tap2TopService.scrollToDiv(opcion.ref)">{{
+                    <a (click)="tap2TopService.scrollToDiv(opcion.ref)">{{
                         opcion.titulo
                     }}</a>
                 </li>
