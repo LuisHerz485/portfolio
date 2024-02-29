@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { opcionesHeader } from '../../interfaces';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { NavigationService } from '../../shared/services/navigation.service';
 import { TapToTopService } from '../../shared/services/tap-to-top.service';
+import { opciones } from '../../shared/data';
+import { IOpciones } from '../../shared/interfaces';
 
 @Component({
     selector: 'app-header',
@@ -15,32 +16,13 @@ import { TapToTopService } from '../../shared/services/tap-to-top.service';
 })
 export class HeaderComponent {
     public normalMode = faMoon;
-    public openMenu: boolean = false;
     public darkMode = faSun;
+
+    public openMenu: boolean = false;
     public isDarkMode: boolean = false;
     public isSpanish: boolean = true;
-    public opciones: opcionesHeader[] = [
-        {
-            titulo: 'Inicio',
-            ref: 'inicio',
-        },
-        {
-            titulo: 'Acerca de Mi',
-            ref: 'acercademi',
-        },
-        {
-            titulo: 'Proyectos',
-            ref: 'proyectos',
-        },
-        {
-            titulo: 'Conocimientos',
-            ref: 'conocimientos',
-        },
-        {
-            titulo: 'Educacion',
-            ref: 'educacion',
-        },
-    ];
+
+    public opciones: IOpciones[] = opciones;
 
     private menuService = inject(NavigationService);
     public tap2TopService = inject(TapToTopService);

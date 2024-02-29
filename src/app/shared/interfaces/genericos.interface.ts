@@ -1,4 +1,4 @@
-export interface opcionesHeader {
+export interface IOpciones {
     titulo: string;
     ref: string;
 }

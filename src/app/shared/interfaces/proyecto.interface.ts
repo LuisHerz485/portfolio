@@ -1,4 +1,4 @@
-import { IDataSkill } from './skills';
+import { IDataSkill } from './skills.interface';
 
 export interface IProyecto {
     id: number;

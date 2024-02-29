@@ -1,6 +1,7 @@
-import { skill } from './skills';
+import { IExperiencia } from '../interfaces';
+import { skill } from './skills.data';
 
-export const experiencia = [
+export const experiencia: IExperiencia[] = [
     {
         id: 1,
         entidad: 'Instituto Nacional de Defensa Civil',

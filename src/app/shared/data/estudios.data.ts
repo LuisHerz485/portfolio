@@ -1,4 +1,6 @@
-export const estudios = [
+import { IEstudio } from '../interfaces';
+
+export const estudios: IEstudio[] = [
     {
         logo: '../../assets/img/upn.png',
         institucion: 'Universidad Privada del Norte',

@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { experiencia } from '../../shared/data/experiencia';
+import { experiencia } from '../../shared/data/experiencia.data';
 import { MatDialog } from '@angular/material/dialog';
 import { ExperienciaModalComponent } from '../../shared/components/modals/experiencia-modal/experiencia-modal.component';
 

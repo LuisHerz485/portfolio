@@ -1,5 +1,5 @@
 import { IProyecto } from '../interfaces';
-import { skill } from './skills';
+import { skill } from './skills.data';
 
 export const proyectos: IProyecto[] = [
     {

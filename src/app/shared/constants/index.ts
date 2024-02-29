@@ -1,1 +1,1 @@
-export * from './contacto';
+export * from './contacto.constant';
