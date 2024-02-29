@@ -23,6 +23,7 @@ export const proyectos: IProyecto[] = [
             skill.lenguajes?.typeScript,
             skill.lenguajes?.javaScript,
         ],
+        portada: '../../../assets/img/slides/sinpad/portada.png',
         imagenes: [
             '../../../assets/img/slides/sinpad/sinpad1.png',
             '../../../assets/img/slides/sinpad/sinpad2.png',
@@ -45,6 +46,7 @@ export const proyectos: IProyecto[] = [
             skill.tools?.jwt,
             skill.tools?.rxjs,
         ],
+        portada: '../../../assets/img/slides/evanoz/portada.png',
         imagenes: [
             '../../../assets/img/slides/evanoz/evanoz1.png',
             '../../../assets/img/slides/evanoz/evanoz2.png',
@@ -61,6 +63,7 @@ export const proyectos: IProyecto[] = [
         descripcionCorta: 'Sistema de gestion de almacenes para platanitos ',
         lugar: 'Peru',
         skills: [skill.lenguajes?.php, skill.bd?.mysql],
+        portada: '../../../assets/img/slides/tutati/portada.png',
         imagenes: [
             '../../../assets/img/slides/tutati/tutati1.png',
             '../../../assets/img/slides/tutati/tutati2.png',
@@ -79,6 +82,7 @@ export const proyectos: IProyecto[] = [
             skill.tools?.rxjs,
             skill.tools?.bootstrap,
         ],
+        portada: '../../../assets/img/slides/cuentas-claras/portada.png',
         imagenes: [
             '../../../assets/img/slides/cuentas-claras/cuentas1.png',
             '../../../assets/img/slides/cuentas-claras/cuentas2.png',
@@ -94,6 +98,7 @@ export const proyectos: IProyecto[] = [
         descripcionCorta:
             'Template para paginas dedicadas a votacion de cryptos',
         lugar: 'Argentina',
+        portada: '../../../assets/img/slides/cryptovote/portada.png',
         skills: [
             skill.frameworks?.angular,
             skill.lenguajes?.typeScript,
@@ -118,6 +123,7 @@ export const proyectos: IProyecto[] = [
             skill.lenguajes?.typeScript,
             skill.tools?.tailwind,
         ],
+        portada: '../../../assets/img/slides/wayless/portada.png',
         imagenes: [
             '../../../assets/img/slides/wayless/wayless1.png',
             '../../../assets/img/slides/wayless/wayless2.png',

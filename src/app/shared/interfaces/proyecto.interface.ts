@@ -8,5 +8,6 @@ export interface IProyecto {
     descripcionCorta: string;
     lugar?: string;
     skills: IDataSkill[] | any[];
+    portada: string;
     imagenes: string[];
 }

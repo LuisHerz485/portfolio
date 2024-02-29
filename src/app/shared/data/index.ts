@@ -4,3 +4,4 @@ export * from './estudios.data';
 export * from './experiencia.data';
 export * from './conocimientos.data';
 export * from './opciones.data';
+export * from './genericos.data';

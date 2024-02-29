@@ -5,4 +5,5 @@ export const conocimientos: IDataSkill[] | any = [
     skill.frameworks?.react,
     skill.frameworks?.express,
     skill.tools?.tailwind,
+    skill.uiux?.photoshop,
 ];
