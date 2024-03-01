@@ -1,5 +1,5 @@
 export interface IInfoSkills {
-    basic?: IBasic;
+    basic?: IBasic | any;
     lenguajes?: ILenguaje;
     tools?: ITools;
     frameworks?: IFrameworks;

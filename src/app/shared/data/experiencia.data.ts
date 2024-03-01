@@ -5,6 +5,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 1,
         entidad: 'Instituto Nacional de Defensa Civil',
+        logoEntidad: '../../../assets/img/experiencias/logos/indeci.png',
         periodo: 'Agosto 2022 - Presente',
         puesto: 'Desarrollador FullStack',
         descripcionBreve:
@@ -20,7 +21,7 @@ export const experiencia: IExperiencia[] = [
             'Desplegar el nuevo Front End y Back End del sistema SINPAD 3.0. VISOR GRD, SISCOE para las pruebas.',
         ],
         skills: {
-            basics: [skill.basic],
+            basics: [skill.basic.html, skill.basic.sass],
             lenguajes: [
                 skill.lenguajes?.typeScript,
                 skill.lenguajes?.javaScript,
@@ -35,7 +36,6 @@ export const experiencia: IExperiencia[] = [
                 skill.tools?.bootstrap,
                 skill.tools?.jwt,
                 skill.tools?.rxjs,
-                skill.tools?.leaflet,
             ],
             bd: [skill.bd?.oracledb, skill.bd?.postgres],
             geo: [skill.geo?.arcgis, skill.geo?.qgis],
@@ -72,7 +72,6 @@ export const experiencia: IExperiencia[] = [
                 skill.frameworks?.nodejs,
                 skill.frameworks?.express,
             ],
-            tools: [],
             bd: [skill.bd?.mongodb, skill.bd?.mysql],
             metodology: [skill.metology?.scrum],
             versionable: [skill.versionable?.git, skill.versionable?.github],
@@ -81,6 +80,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 3,
         entidad: 'Comercial Mont "Platanitos"',
+        logoEntidad: '../../../assets/img/experiencias/logos/platanitos.png',
         periodo: 'Octubre 2021 - Enero 2022',
         puesto: 'Desarrollador BackEnd',
         descripcionBreve:
@@ -98,8 +98,6 @@ export const experiencia: IExperiencia[] = [
         skills: {
             basics: [skill.basic?.html, skill.basic?.css],
             lenguajes: [skill.lenguajes?.php, skill.lenguajes?.javaScript],
-            frameworks: [],
-            tools: [],
             bd: [skill.bd?.mysql],
             metodology: [skill.metology?.scrum],
             versionable: [skill.versionable?.git, skill.tools?.aws],
@@ -108,6 +106,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 4,
         entidad: 'FC Contadores & Asociados"',
+        logoEntidad: '../../../assets/img/experiencias/logos/fccontadores.webp',
         periodo: 'Febrero 2021 - Julio 2022',
         puesto: 'Desarrollador FullStack',
         descripcionBreve:
@@ -122,7 +121,6 @@ export const experiencia: IExperiencia[] = [
         skills: {
             basics: [skill.basic?.html, skill.basic?.css],
             lenguajes: [skill.lenguajes?.php, skill.lenguajes?.javaScript],
-            frameworks: [],
             tools: [skill.tools?.jquery],
             bd: [skill.bd?.mysql],
             metodology: [skill.metology?.scrum],
@@ -132,6 +130,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 5,
         entidad: 'Alignet',
+        logoEntidad: '../../../assets/img/experiencias/logos/alignet.jpg',
         periodo: 'Febrero 2018 - Julio 2018',
         puesto: 'Desarrollador BackEnd',
         descripcionBreve: 'Desarrollo de paginas web e-commerce',
@@ -142,10 +141,8 @@ export const experiencia: IExperiencia[] = [
             'Mantenimiento de código fuente de proyecto vinculados a soluciones de comercios con pago web',
         ],
         skills: {
-            basics: [],
             lenguajes: [skill.lenguajes?.java],
             frameworks: [skill.frameworks?.springboot],
-            tools: [],
             bd: [skill.bd?.mysql, skill.bd?.oracledb],
             metodology: [skill.metology?.scrum],
             versionable: [skill.versionable?.git, skill.versionable?.github],
@@ -154,8 +151,9 @@ export const experiencia: IExperiencia[] = [
     {
         id: 6,
         entidad: 'Foto Latino Producciones',
+        logoEntidad: '../../../assets/img/experiencias/logos/fotolatino.jpeg',
         periodo: 'Junio 2016 - Abril 2017',
-        puesto: 'Desarrollador web y Soporte Tecnico',
+        puesto: 'Desarrollador web',
         descripcionBreve:
             'Desarrollo de pagina web de Foto Latinos Producciones',
         tareas: [
@@ -168,7 +166,6 @@ export const experiencia: IExperiencia[] = [
         skills: {
             basics: [skill.basic?.html, skill.basic?.css],
             lenguajes: [skill.lenguajes?.php, skill.lenguajes?.javaScript],
-            frameworks: [],
             tools: [skill.tools?.wordpress],
             bd: [skill.bd?.mysql],
             metodology: [skill.metology?.scrum],

@@ -4,6 +4,277 @@
         <button class="rounded-full p-1 bg-white" (click)="closeModal()">
             <fa-icon [icon]="closeIcon"></fa-icon>
         </button>
-        <div class="lg:flex lg:items-center w-full"></div>
+    </div>
+    <div class="lg:flex p-2">
+        <div class="lg:w-1/2 p-4">
+            <div class="md:p-1">
+                <h2 class="text-2xl font-semibold mb-2">Informacion</h2>
+                <hr />
+                <div class="flex justify-between items-center">
+                    <p class="text-xl mt-4">{{ infoExperiencia.puesto }}</p>
+                    <span
+                        class="hidden lg:block text-xs bg-primary-400 text-white rounded-full px-2 py-1"
+                        >{{ infoExperiencia.periodo }}</span
+                    >
+                </div>
+                <p class="text-md text-ternary-500">
+                    {{ infoExperiencia.entidad }}
+                </p>
+                <span
+                    class="w-1/4 lg:hidden text-xs bg-primary-400 text-white rounded-full px-2 py-1"
+                    >{{ infoExperiencia.periodo }}</span
+                >
+
+                <ul class="text-md list-disc list-inside mt-4 ml-1">
+                    @for (tareas of infoExperiencia.tareas; track $index) {
+                        <li class="my-1">{{ tareas }}</li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="lg:w-1/2 my-4">
+            <div class="flex justify-center mt-14 border-2 rounded-xl p-2">
+                @if (infoExperiencia.logoEntidad) {
+                    <img
+                        [src]="infoExperiencia.logoEntidad"
+                        alt=""
+                        class="max-w-44 lg:max-w-56" />
+                } @else {
+                    <div
+                        class="text-[10rem] text-white rounded-full bg-sky-700 py-10 px-28">
+                        {{ infoExperiencia.entidad.charAt(0) }}
+                    </div>
+                }
+            </div>
+            <div class="md:p-1">
+                <h4 class="mt-2 font-semibold">Tech Skills</h4>
+                <div
+                    class="grid gap-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-auto">
+                    @if (infoExperiencia.skills.basics) {
+                        <div class="my-2 relative">
+                            <div
+                                id="basic"
+                                class="flex justify-evenly border-2 rounded-xl p-2">
+                                @for (
+                                    skill of infoExperiencia.skills.basics;
+                                    track $index
+                                ) {
+                                    <div class="tooltip">
+                                        <img
+                                            [src]="skill.icono"
+                                            alt=""
+                                            class="max-h-10" />
+                                        <span class="tooltiptext text-xs">{{
+                                            skill.titulo
+                                        }}</span>
+                                    </div>
+                                }
+                            </div>
+                            <label
+                                for="basic"
+                                class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
+                                >Basico</label
+                            >
+                        </div>
+                    }
+
+                    @if (infoExperiencia.skills.lenguajes) {
+                        <div class="my-2 relative">
+                            <div
+                                id="basic"
+                                class="flex justify-evenly border-2 rounded-xl p-2">
+                                @for (
+                                    skill of infoExperiencia.skills.lenguajes;
+                                    track $index
+                                ) {
+                                    <div class="tooltip">
+                                        <img
+                                            [src]="skill.icono"
+                                            alt=""
+                                            class="max-h-10" />
+                                        <span class="tooltiptext text-xs">{{
+                                            skill.titulo
+                                        }}</span>
+                                    </div>
+                                }
+                            </div>
+                            <label
+                                for="basic"
+                                class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
+                                >Lenguajes</label
+                            >
+                        </div>
+                    }
+
+                    @if (infoExperiencia.skills.frameworks) {
+                        <div class="my-2 relative">
+                            <div
+                                id="basic"
+                                class="flex justify-evenly border-2 rounded-xl p-2">
+                                @for (
+                                    skill of infoExperiencia.skills.frameworks;
+                                    track $index
+                                ) {
+                                    <div class="tooltip">
+                                        <img
+                                            [src]="skill.icono"
+                                            alt=""
+                                            class="max-h-10" />
+                                        <span class="tooltiptext text-xs">{{
+                                            skill.titulo
+                                        }}</span>
+                                    </div>
+                                }
+                            </div>
+                            <label
+                                for="basic"
+                                class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
+                                >Frameworks</label
+                            >
+                        </div>
+                    }
+
+                    @if (infoExperiencia.skills.tools) {
+                        <div class="my-2 relative">
+                            <div
+                                id="basic"
+                                class="flex justify-evenly border-2 rounded-xl p-2">
+                                @for (
+                                    skill of infoExperiencia.skills.tools;
+                                    track $index
+                                ) {
+                                    <div class="tooltip">
+                                        <img
+                                            [src]="skill.icono"
+                                            alt=""
+                                            class="max-h-10" />
+                                        <span class="tooltiptext text-xs">{{
+                                            skill.titulo
+                                        }}</span>
+                                    </div>
+                                }
+                            </div>
+                            <label
+                                for="basic"
+                                class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
+                                >Herramientas</label
+                            >
+                        </div>
+                    }
+
+                    @if (infoExperiencia.skills.bd) {
+                        <div class="my-2 relative">
+                            <div
+                                id="basic"
+                                class="flex justify-evenly border-2 rounded-xl p-2">
+                                @for (
+                                    skill of infoExperiencia.skills.bd;
+                                    track $index
+                                ) {
+                                    <div class="tooltip">
+                                        <img
+                                            [src]="skill.icono"
+                                            alt=""
+                                            class="max-h-10" />
+                                        <span class="tooltiptext text-xs">{{
+                                            skill.titulo
+                                        }}</span>
+                                    </div>
+                                }
+                            </div>
+                            <label
+                                for="basic"
+                                class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
+                                >Base de datos</label
+                            >
+                        </div>
+                    }
+
+                    @if (infoExperiencia.skills.geo) {
+                        <div class="my-2 relative">
+                            <div
+                                id="basic"
+                                class="flex justify-evenly border-2 rounded-xl p-2">
+                                @for (
+                                    skill of infoExperiencia.skills.geo;
+                                    track $index
+                                ) {
+                                    <div class="tooltip">
+                                        <img
+                                            [src]="skill.icono"
+                                            alt=""
+                                            class="max-h-10" />
+                                        <span class="tooltiptext text-xs">{{
+                                            skill.titulo
+                                        }}</span>
+                                    </div>
+                                }
+                            </div>
+                            <label
+                                for="basic"
+                                class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
+                                >Georeferencias</label
+                            >
+                        </div>
+                    }
+
+                    @if (infoExperiencia.skills.metodology) {
+                        <div class="my-2 relative">
+                            <div
+                                id="basic"
+                                class="flex justify-evenly border-2 rounded-xl p-2">
+                                @for (
+                                    skill of infoExperiencia.skills.metodology;
+                                    track $index
+                                ) {
+                                    <div class="tooltip">
+                                        <img
+                                            [src]="skill.icono"
+                                            alt=""
+                                            class="max-h-10" />
+                                        <span class="tooltiptext text-xs">{{
+                                            skill.titulo
+                                        }}</span>
+                                    </div>
+                                }
+                            </div>
+                            <label
+                                for="basic"
+                                class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
+                                >Metodologias</label
+                            >
+                        </div>
+                    }
+
+                    @if (infoExperiencia.skills.versionable) {
+                        <div class="my-2 relative">
+                            <div
+                                id="basic"
+                                class="flex justify-evenly border-2 rounded-xl p-2">
+                                @for (
+                                    skill of infoExperiencia.skills.versionable;
+                                    track $index
+                                ) {
+                                    <div class="tooltip">
+                                        <img
+                                            [src]="skill.icono"
+                                            alt=""
+                                            class="max-h-10" />
+                                        <span class="tooltiptext text-xs">{{
+                                            skill.titulo
+                                        }}</span>
+                                    </div>
+                                }
+                            </div>
+                            <label
+                                for="basic"
+                                class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
+                                >Gestor de versiones</label
+                            >
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
     </div>
 </section>

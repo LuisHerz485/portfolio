@@ -21,10 +21,14 @@ export class TimelineTrabajosComponent {
     public openModalExperiencia(experiencia: any): void {
         this.dlgRef.open(ExperienciaModalComponent, {
             disableClose: true,
-            minWidth: '80vw',
-            minHeight: '40vw',
-            maxWidth: '80vw',
-            maxHeight: '130vw',
+            panelClass: [
+                'max-h-[100vw]',
+                'sm:max-h-[20vw]',
+                'md:max-h-[80vw]',
+                'lg:max-h-[50vw]',
+                'xl:max-h-[50vw]',
+                'min-w-[80%]',
+            ],
             data: experiencia,
         });
     }
