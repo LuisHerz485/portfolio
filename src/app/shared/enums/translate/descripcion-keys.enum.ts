@@ -1,0 +1,5 @@
+export enum descripcionKeyTranslate {
+    ACERCADEMI = 'DESCRIPCION.ACERCADEMI',
+    TITULO = 'DESCRIPCION.TITULO',
+    CUERPO = 'DESCRIPCION.CUERPO',
+}

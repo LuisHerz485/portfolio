@@ -1,25 +1,16 @@
 import { IExperiencia } from '../interfaces';
 import { skill } from './skills.data';
+import * as enumKeys from '../enums';
 
 export const experiencia: IExperiencia[] = [
     {
         id: 1,
-        entidad: 'Instituto Nacional de Defensa Civil',
+        entidad: enumKeys.experienciaKeyTranslate.ENTIDADINDECI,
         logoEntidad: '../../../assets/img/experiencias/logos/indeci.png',
-        periodo: 'Agosto 2022 - Presente',
-        puesto: 'Desarrollador FullStack',
-        descripcionBreve:
-            'Desarrollo del sistema del ministerio de defensa: SINPAD v3 para gestion desastres naturales y emergencias nacionales',
-        tareas: [
-            'Análisis de procesos mediante BPMN para la optimización y desarrollo de funcionalidades en SINPAD 3.0',
-            'Responsable de la revisión continua de nueva codificación en entorno frontend y backend para nuevas funcionalidades del SINPAD 3.0',
-            'Liderar el equipo de desarrollo front end para el alto desempeño del mismo',
-            'Creación de documentación indispensable sobre el desarrollo del sistema SINPAD 3.0',
-            'Creación de estructura principal para el entorno frontend para el sistema SINPAD 3.0.',
-            'Desarrollo de los módulos del nuevo sistema SINPAD 3.0, VISOR GRD, SISCOE',
-            'Mantenimiento de los códigos fuentes del Front End y Back End del nuevo sistema SINPAD 3.0. VISOR GRD, SISCOE.',
-            'Desplegar el nuevo Front End y Back End del sistema SINPAD 3.0. VISOR GRD, SISCOE para las pruebas.',
-        ],
+        periodo: enumKeys.experienciaKeyTranslate.PERIODOINDECI,
+        puesto: enumKeys.genericosKeyTranslate.FULLSTACK,
+        descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEINDECI,
+        tareas: [enumKeys.experienciaKeyTranslate.TAREASINDECI],
         skills: {
             basics: [skill.basic.html, skill.basic.sass],
             lenguajes: [
@@ -46,19 +37,10 @@ export const experiencia: IExperiencia[] = [
     {
         id: 2,
         entidad: 'PolySoft',
-        periodo: 'Octubre 2021 - Enero 2022',
-        puesto: 'Desarrollador FullStack',
-        descripcionBreve: 'Desarrollo de proyectos web para e-Commerce y blogs',
-        tareas: [
-            'Desarrollo de proyectos web para e-Commerce y blogs.',
-            'Creación de APIs (Node) y paneles administrativos y tiendas (Angular o React).',
-            'Implementación de pasarela de pagos utilizando API’s como Culqi y PayPal.',
-            'Optimización de código.',
-            'Configuración de droplets con Ubuntu.',
-            'Despliegue de proyectos a producción en servidores VPS.',
-            'Maquetación de páginas web.',
-            'Proyectos desarrollados con metodología ágil SCRUM.',
-        ],
+        periodo: enumKeys.experienciaKeyTranslate.PERIODOPOLYSOFT,
+        puesto: enumKeys.genericosKeyTranslate.FULLSTACK,
+        descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEPOLYSFOT,
+        tareas: [enumKeys.experienciaKeyTranslate.TAREASPOLYSOFT],
         skills: {
             basics: [skill.basic?.html, skill.basic?.sass],
             lenguajes: [
@@ -79,22 +61,12 @@ export const experiencia: IExperiencia[] = [
     },
     {
         id: 3,
-        entidad: 'Comercial Mont "Platanitos"',
+        entidad: enumKeys.experienciaKeyTranslate.ENTIDADPLATANITOS,
         logoEntidad: '../../../assets/img/experiencias/logos/platanitos.png',
-        periodo: 'Octubre 2021 - Enero 2022',
-        puesto: 'Desarrollador BackEnd',
-        descripcionBreve:
-            'Desarrollo del sistema tutati, para gestion de RRHH y procesos logisticos',
-        tareas: [
-            'Análisis de procesos logísticos para la creación de funcionalidades y automatización del sistema “Tutati”',
-            'Desarrollo de nuevas funcionalidades en sistema de gestión logística “Tutati”.',
-            'Desarrollo de módulos para seguimiento de delivery.',
-            'Desarrollo de módulos para seguimiento de procesos de almacén.',
-            'Desarrollo de módulos para seguimiento de distribución.',
-            'Modificación y optimización de código.',
-            'Mantenimiento de base de datos.',
-            'Proyecto desarrollado bajo la metodología ágil SCRUM.',
-        ],
+        periodo: enumKeys.experienciaKeyTranslate.PERIODOPLATANITOS,
+        puesto: enumKeys.genericosKeyTranslate.BACKEND,
+        descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEPLATANITOS,
+        tareas: [enumKeys.experienciaKeyTranslate.TAREASPLATANITOS],
         skills: {
             basics: [skill.basic?.html, skill.basic?.css],
             lenguajes: [skill.lenguajes?.php, skill.lenguajes?.javaScript],
@@ -105,19 +77,12 @@ export const experiencia: IExperiencia[] = [
     },
     {
         id: 4,
-        entidad: 'FC Contadores & Asociados"',
+        entidad: enumKeys.experienciaKeyTranslate.ENTIDADFC,
         logoEntidad: '../../../assets/img/experiencias/logos/fccontadores.webp',
-        periodo: 'Febrero 2021 - Julio 2022',
-        puesto: 'Desarrollador FullStack',
-        descripcionBreve:
-            'Desarrollo del sistema tutati, para gestion de RRHH y procesos logisticos',
-        tareas: [
-            'Responsable y líder de área de sistemas.',
-            'Desarrollo y mantenimiento de páginas web (FyF Auditores y FC Contadores).',
-            'Desarrollo de sistema de asistencias para el personal.',
-            'Desarrollo de sistema de intranet para administrativos y clientes.',
-            'Implementación de API de Google Drive y SUNAT.',
-        ],
+        periodo: enumKeys.experienciaKeyTranslate.PERIODOFC,
+        puesto: enumKeys.genericosKeyTranslate.FULLSTACK,
+        descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEFC,
+        tareas: [enumKeys.experienciaKeyTranslate.TAREASFC],
         skills: {
             basics: [skill.basic?.html, skill.basic?.css],
             lenguajes: [skill.lenguajes?.php, skill.lenguajes?.javaScript],
@@ -131,15 +96,10 @@ export const experiencia: IExperiencia[] = [
         id: 5,
         entidad: 'Alignet',
         logoEntidad: '../../../assets/img/experiencias/logos/alignet.jpg',
-        periodo: 'Febrero 2018 - Julio 2018',
-        puesto: 'Desarrollador BackEnd',
-        descripcionBreve: 'Desarrollo de paginas web e-commerce',
-        tareas: [
-            'Despliegue de Proyectos hacia ambientes de producción',
-            'Configuración de software para despliegue a producción',
-            'Configuración de servidores',
-            'Mantenimiento de código fuente de proyecto vinculados a soluciones de comercios con pago web',
-        ],
+        periodo: enumKeys.experienciaKeyTranslate.PERIODOALIGNET,
+        puesto: enumKeys.genericosKeyTranslate.BACKEND,
+        descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEALIGNET,
+        tareas: [enumKeys.experienciaKeyTranslate.TAREASALIGNET],
         skills: {
             lenguajes: [skill.lenguajes?.java],
             frameworks: [skill.frameworks?.springboot],
@@ -150,19 +110,12 @@ export const experiencia: IExperiencia[] = [
     },
     {
         id: 6,
-        entidad: 'Foto Latino Producciones',
+        entidad: enumKeys.experienciaKeyTranslate.ENTIDADFOTOLATINO,
         logoEntidad: '../../../assets/img/experiencias/logos/fotolatino.jpeg',
-        periodo: 'Junio 2016 - Abril 2017',
-        puesto: 'Desarrollador web',
-        descripcionBreve:
-            'Desarrollo de pagina web de Foto Latinos Producciones',
-        tareas: [
-            'Mantenimiento de la página web.',
-            'Instalación, configuración, administración y mantenimiento de equipos informáticos.',
-            'Monitoreo de backups de información y material fotográfico.',
-            'Recuperación de información.',
-            'Instalación, activación y actualización de software.',
-        ],
+        periodo: enumKeys.experienciaKeyTranslate.PERIODOFOTOLATINO,
+        puesto: enumKeys.genericosKeyTranslate.FULLSTACK,
+        descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEFOTOLATINO,
+        tareas: [enumKeys.experienciaKeyTranslate.TAREASFOTOLATINO],
         skills: {
             basics: [skill.basic?.html, skill.basic?.css],
             lenguajes: [skill.lenguajes?.php, skill.lenguajes?.javaScript],

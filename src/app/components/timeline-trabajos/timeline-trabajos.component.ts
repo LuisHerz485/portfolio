@@ -4,17 +4,21 @@ import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { experiencia } from '../../shared/data/experiencia.data';
 import { MatDialog } from '@angular/material/dialog';
 import { ExperienciaModalComponent } from '../../shared/components/modals/experiencia-modal/experiencia-modal.component';
+import * as enumKeys from '../../shared/enums';
+import { TranslatePipe } from '../../shared/pipes';
 
 @Component({
     selector: 'app-timeline-trabajos',
     standalone: true,
-    imports: [FontAwesomeModule],
+    imports: [FontAwesomeModule, TranslatePipe],
     templateUrl: './timeline-trabajos.component.html',
     styleUrl: './timeline-trabajos.component.scss',
 })
 export class TimelineTrabajosComponent {
     public maletinIcon = faBriefcase;
     public experiencias = experiencia;
+
+    public enumKeys: typeof enumKeys = enumKeys;
 
     private dlgRef = inject(MatDialog);
 

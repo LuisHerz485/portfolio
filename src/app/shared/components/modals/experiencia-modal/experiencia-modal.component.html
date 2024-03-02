@@ -8,26 +8,32 @@
     <div class="lg:flex p-2">
         <div class="lg:w-1/2 p-4">
             <div class="md:p-1">
-                <h2 class="text-2xl font-semibold mb-2">Informacion</h2>
+                <h2 class="text-2xl font-semibold mb-2">
+                    {{ enumKeys.proyectosKeyTranslate.TITULOMODAL | translate }}
+                </h2>
                 <hr />
                 <div class="flex justify-between items-center">
-                    <p class="text-xl mt-4">{{ infoExperiencia.puesto }}</p>
+                    <p class="text-xl mt-4">
+                        {{ infoExperiencia.puesto | translate }}
+                    </p>
                     <span
                         class="hidden lg:block text-xs bg-primary-400 text-white rounded-full px-2 py-1"
-                        >{{ infoExperiencia.periodo }}</span
+                        >{{ infoExperiencia.periodo | translate }}</span
                     >
                 </div>
                 <p class="text-md text-ternary-500">
-                    {{ infoExperiencia.entidad }}
+                    {{ infoExperiencia.entidad | translate }}
                 </p>
                 <span
                     class="w-1/4 lg:hidden text-xs bg-primary-400 text-white rounded-full px-2 py-1"
-                    >{{ infoExperiencia.periodo }}</span
+                    >{{ infoExperiencia.periodo | translate }}</span
                 >
 
                 <ul class="text-md list-disc list-inside mt-4 ml-1">
-                    @for (tareas of infoExperiencia.tareas; track $index) {
-                        <li class="my-1">{{ tareas }}</li>
+                    @for (tareas of arrayTareas; track $index) {
+                        <li class="my-1">
+                            {{ tareas }}
+                        </li>
                     }
                 </ul>
             </div>
@@ -47,7 +53,12 @@
                 }
             </div>
             <div class="md:p-1">
-                <h4 class="mt-2 font-semibold">Tech Skills</h4>
+                <h4 class="mt-2 font-semibold">
+                    {{
+                        enumKeys.genericosKeyTranslate.COMPETENCIASTECNICAS
+                            | translate
+                    }}
+                </h4>
                 <div
                     class="grid gap-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-auto">
                     @if (infoExperiencia.skills.basics) {
@@ -73,7 +84,10 @@
                             <label
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
-                                >Basico</label
+                                >{{
+                                    enumKeys.genericosKeyTranslate.BASICOS
+                                        | translate
+                                }}</label
                             >
                         </div>
                     }
@@ -101,7 +115,10 @@
                             <label
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
-                                >Lenguajes</label
+                                >{{
+                                    enumKeys.genericosKeyTranslate.LENGUAJES
+                                        | translate
+                                }}</label
                             >
                         </div>
                     }
@@ -157,7 +174,10 @@
                             <label
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
-                                >Herramientas</label
+                                >{{
+                                    enumKeys.genericosKeyTranslate.HERRAMIENTAS
+                                        | translate
+                                }}</label
                             >
                         </div>
                     }
@@ -185,7 +205,10 @@
                             <label
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
-                                >Base de datos</label
+                                >{{
+                                    enumKeys.genericosKeyTranslate.BD
+                                        | translate
+                                }}</label
                             >
                         </div>
                     }
@@ -213,7 +236,10 @@
                             <label
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
-                                >Georeferencias</label
+                                >{{
+                                    enumKeys.genericosKeyTranslate.GEO
+                                        | translate
+                                }}</label
                             >
                         </div>
                     }
@@ -241,7 +267,10 @@
                             <label
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
-                                >Metodologias</label
+                                >{{
+                                    enumKeys.genericosKeyTranslate.METODOLOGIAS
+                                        | translate
+                                }}</label
                             >
                         </div>
                     }
@@ -269,7 +298,10 @@
                             <label
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
-                                >Gestor de versiones</label
+                                >{{
+                                    enumKeys.genericosKeyTranslate.VERSIONABLE
+                                        | translate
+                                }}</label
                             >
                         </div>
                     }

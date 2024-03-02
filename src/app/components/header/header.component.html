@@ -13,7 +13,7 @@
             @for (opcion of opciones; track $index) {
                 <li class="mr-4 cursor-pointer hover:text-primary-600">
                     <a (click)="tap2TopService.scrollToDiv(opcion.ref)">{{
-                        opcion.titulo
+                        opcion.titulo | translate
                     }}</a>
                 </li>
             }
@@ -43,7 +43,7 @@
                         <a
                             (click)="scrollAndClose(opcion.ref)"
                             class="hover:text-primary-600"
-                            >{{ opcion.titulo }}</a
+                            >{{ opcion.titulo | translate }}</a
                         >
                     </li>
                 }
@@ -51,7 +51,7 @@
                     <button
                         (click)="escogerIdioma()"
                         class="text-primary-400 m-4">
-                        {{ idioma }}
+                        {{ idioma.toUpperCase() }}
                     </button>
                     <button
                         class="cursor-pointer bg-primary-400 border m-4 p-2 rounded-3xl min-w-9 ml-2 hover:bg-blue-600"
@@ -77,7 +77,7 @@
     <div class="hidden sm:block">
         <div class="text-sky-50" [class.hidden]="openMenu">
             <button (click)="escogerIdioma()" class="text-primary-400">
-                {{ idioma }}
+                {{ idioma.toUpperCase() }}
             </button>
             <button
                 class="cursor-pointer bg-primary-400 border p-2 rounded-3xl min-w-9 ml-2 hover:bg-blue-600"

@@ -22,15 +22,25 @@
 
         <div class="lg:w-1/2 h-full p-4">
             <div class="p-4">
-                <h2 class="text-2xl font-semibold mb-2">Informacion</h2>
+                <h2 class="text-2xl font-semibold mb-2">
+                    {{ enumKeys.proyectosKeyTranslate.TITULOMODAL | translate }}
+                </h2>
                 <hr />
-                <p class="text-xl mt-4">Proyecto {{ data.titulo }}</p>
-                <p class="text-md text-ternary-500">
-                    {{ data.entidad }} - {{ data.lugar }}
+                <p class="text-xl mt-4">
+                    {{ enumKeys.genericosKeyTranslate.PROYECTOS | translate }}
+                    {{ data.titulo }}
                 </p>
-                <p class="mt-4">{{ data.descripcion }}</p>
+                <p class="text-md text-ternary-500">
+                    {{ data.entidad | translate }} - {{ data.lugar }}
+                </p>
+                <p class="mt-4">{{ data.descripcion | translate }}</p>
 
-                <h3 class="mt-4">Technical Skill</h3>
+                <h3 class="mt-6 font-semibold mb-2">
+                    {{
+                        enumKeys.genericosKeyTranslate.COMPETENCIASTECNICAS
+                            | translate
+                    }}
+                </h3>
                 <div class="grid gap-1 grid-cols-5">
                     @for (skill of data.skills; track $index) {
                         <div class="tooltip">
@@ -38,7 +48,7 @@
                                 [src]="skill.icono"
                                 alt=""
                                 class="md:max-h-12 lg:max-h-16" />
-                            <span class="tooltiptext"
+                            <span class="tooltiptext text-xs"
                                 >{{ skill.titulo }}
                                 @if (skill.plugins) {
                                     <br />

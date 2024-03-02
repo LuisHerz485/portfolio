@@ -2,9 +2,11 @@
     class="sm:m-20 sm:pl-60 sm:pr-60 md:m-20 md:pl-20 md:pr-20 text-center">
     <div>
         <h1 class="text-xl text-center text-primary-400 font-semibold">
-            ¿Que estudie? 🤨
+            {{ enumKeys.estudiosKeyTranslate.TITLE | translate }}
         </h1>
-        <p class="text-center font-semibold">Aqui te dejo un pequeno resumen</p>
+        <p class="text-center font-semibold">
+            {{ enumKeys.estudiosKeyTranslate.SUBTITULO | translate }}
+        </p>
     </div>
     <div class="mt-5 lg:flex">
         @for (estudio of estudios; track $index) {
@@ -12,17 +14,19 @@
                 class="sm:w-1/3 md:w-full sm:mr-1 sm:ml-1 m-2 border-2 p-4 flex flex-col items-center shadow-sm hover:shadow-lg rounded-lg">
                 <img [src]="estudio.logo" alt="" class="max-w-32" />
 
-                <h6 class="text-sm mt-4">{{ estudio.institucion }}</h6>
+                <h6 class="text-sm mt-4">
+                    {{ estudio.institucion | translate }}
+                </h6>
                 <h5
                     class="text-base bg-primary-400 rounded-full lg:rounded-lg xl:rounded-full text-white pt-1 pb-1 pl-4 pr-4 font-semibold">
-                    {{ estudio.carrera }}
+                    {{ estudio.carrera | translate }}
                 </h5>
                 <h5 class="font-normal text-sm mt-1 mb-2">
-                    {{ estudio.periodo }}
+                    {{ estudio.periodo | translate }}
                 </h5>
                 <hr />
                 <ul class="font-normal list-disc list-inside text-sm">
-                    @for (skill of estudio.skills; track $index) {
+                    @for (skill of arraySkills; track $index) {
                         <li>{{ skill }}</li>
                     }
                 </ul>

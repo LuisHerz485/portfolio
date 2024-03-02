@@ -1,10 +1,10 @@
 <section class="md:m-12 md:pl-20 md:pr-20 xl:pl-72 xl:pr-72 p-10">
     <div>
         <h1 class="text-xl text-center text-primary-400 font-semibold">
-            ¿Buscabas algo? 🤨
+            {{ enumKeys.proyectosKeyTranslate.TITULO | translate }}
         </h1>
         <p class="text-center font-semibold">
-            Aqui te dejo algunos proyectos, pero... 🤫
+            {{ enumKeys.proyectosKeyTranslate.SUBTITULO | translate }}
         </p>
     </div>
     <div class="mt-5">
@@ -26,13 +26,13 @@
                         <h4 class="font-semibold">{{ proyecto.titulo }}</h4>
                         <h5
                             class="text-xs font-semibold text-secondary-500 mb-2">
-                            {{ proyecto.entidad }}
+                            {{ proyecto.entidad | translate }}
                         </h5>
                         <hr />
-                        <h6
-                            class="text-sm font-normal text-secondary-500 mt-2 mb-2">
-                            {{ proyecto.descripcionCorta }}
-                        </h6>
+                        <p
+                            class="text-sm font-normal min-h-14 flex items-center text-secondary-500 mt-2 mb-2">
+                            {{ proyecto.descripcionCorta | translate }}
+                        </p>
                         <hr />
                         <div class="flex justify-center mb-2">
                             @for (
@@ -60,7 +60,10 @@
                             (click)="openModalProyecto(proyecto)"
                             type="button"
                             class="mt-2 bg-primary-400 text-white font-medium p-2 rounded-md hover:bg-primary-500 min-w-full">
-                            Ver más
+                            {{
+                                enumKeys.genericosKeyTranslate.VERMAS
+                                    | translate
+                            }}
                         </button>
                     </article>
                 </swiper-slide>

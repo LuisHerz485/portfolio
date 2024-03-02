@@ -1,24 +1,25 @@
 import { IOpciones } from '../interfaces';
+import * as enumKeys from '../enums/translate/header-keys.enum';
 
 export const opciones: IOpciones[] = [
     {
-        titulo: 'Inicio',
+        titulo: enumKeys.headerKeysTranslate.INICIO,
         ref: 'inicio',
     },
     {
-        titulo: 'Acerca de Mi',
+        titulo: enumKeys.headerKeysTranslate.ACERCADEMI,
         ref: 'acercademi',
     },
     {
-        titulo: 'Proyectos',
+        titulo: enumKeys.headerKeysTranslate.PROYECTOS,
         ref: 'proyectos',
     },
     {
-        titulo: 'Conocimientos',
+        titulo: enumKeys.headerKeysTranslate.CONOCIMIENTOS,
         ref: 'conocimientos',
     },
     {
-        titulo: 'Educacion',
+        titulo: enumKeys.headerKeysTranslate.EDUCACION,
         ref: 'educacion',
     },
 ];

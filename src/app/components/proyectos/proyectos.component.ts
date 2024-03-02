@@ -5,16 +5,24 @@ import { ProyectoModalComponent } from '../../shared/components/modals/proyecto-
 import { MatDialog } from '@angular/material/dialog';
 import { IProyecto } from '../../shared/interfaces';
 import { NgOptimizedImage } from '@angular/common';
+import * as enumKeys from '../../shared/enums';
+import { TranslatePipe } from '../../shared/pipes';
 
 @Component({
     selector: 'app-proyectos',
     standalone: true,
-    imports: [CommonModule, ProyectoModalComponent, NgOptimizedImage],
+    imports: [
+        CommonModule,
+        ProyectoModalComponent,
+        NgOptimizedImage,
+        TranslatePipe,
+    ],
     templateUrl: './proyectos.component.html',
     styleUrl: './proyectos.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ProyectosComponent {
+    public enumKeys: typeof enumKeys = enumKeys;
     public openModal: boolean = false;
     public dataProyectos = proyectos;
     public breakpoints = {

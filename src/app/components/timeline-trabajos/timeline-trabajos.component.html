@@ -1,7 +1,11 @@
 <section class="m-8 xl:px-72 md:px-8">
     <div class="text-center font-semibold">
-        <h1 class="text-xl text-primary-400">Experiencia</h1>
-        <h2 class="text-4xl">Laborales</h2>
+        <h1 class="text-xl text-primary-400">
+            {{ enumKeys.experienciaKeyTranslate.TITULO1 | translate }}
+        </h1>
+        <h2 class="text-4xl">
+            {{ enumKeys.experienciaKeyTranslate.TITULO2 | translate }}
+        </h2>
     </div>
 
     <div
@@ -18,23 +22,25 @@
                     <div
                         class="lg:flex lg:items-center lg:justify-between lg:space-x-2">
                         <div class="font-bold text-slate-900">
-                            {{ experiencia.puesto }}
+                            {{ experiencia.puesto | translate }}
                         </div>
                         <time
                             class="font-medium text-white bg-primary-400 rounded-full p-1 min-w-52 text-center text-xs"
-                            >{{ experiencia.periodo }}</time
+                            >{{ experiencia.periodo | translate }}</time
                         >
                     </div>
                     <div class="text-ternary-500 mb-1">
-                        {{ experiencia.entidad }}
+                        {{ experiencia.entidad | translate }}
                     </div>
                     <div class="text-slate-500">
-                        {{ experiencia.descripcionBreve }}
+                        {{ experiencia.descripcionBreve | translate }}
                     </div>
                     <div
                         (click)="openModalExperiencia(experiencia)"
                         class="cursor-pointer mt-2 flex justify-end text-sm hover:text-primary-400">
-                        Ver Mas...
+                        {{
+                            enumKeys.genericosKeyTranslate.VERMAS | translate
+                        }}...
                     </div>
                 </div>
             </div>
