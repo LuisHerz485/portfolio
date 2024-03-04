@@ -1,4 +1,13 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
+import {
+    Component,
+    CUSTOM_ELEMENTS_SCHEMA,
+    ElementRef,
+    HostListener,
+    inject,
+    NgZone,
+    OnDestroy,
+    OnInit,
+} from '@angular/core';
 import { proyectos } from '../../shared/data';
 import { CommonModule } from '@angular/common';
 import { ProyectoModalComponent } from '../../shared/components/modals/proyecto-modal/proyecto-modal.component';
@@ -22,6 +31,11 @@ import { TranslatePipe } from '../../shared/pipes';
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ProyectosComponent {
+    private elementRef = inject(ElementRef);
+    private ngZone = inject(NgZone);
+
+    private intersectionObserver!: IntersectionObserver;
+
     public enumKeys: typeof enumKeys = enumKeys;
     public openModal: boolean = false;
     public dataProyectos = proyectos;

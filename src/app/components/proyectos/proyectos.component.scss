@@ -1,1 +1,13 @@
 @import '../../shared/styles/tooltip.scss';
+@import '../../shared/styles/animations.scss';
+
+section{
+    view-timeline-name: --section;
+    view-timeline-axis: block;
+
+    animation-timeline: --section;
+    animation-name : show;
+
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode : both
+}

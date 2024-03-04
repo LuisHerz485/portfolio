@@ -1,0 +1,12 @@
+@import '../../shared/styles/animations.scss';
+
+section{
+    view-timeline-name : --panel;
+    view-timeline-axis: block;
+
+    animation-timeline: --panel;
+    animation-name: show;
+
+    animation-range: entry 15% cover 30%;
+    animation-fill-mode: both;
+}

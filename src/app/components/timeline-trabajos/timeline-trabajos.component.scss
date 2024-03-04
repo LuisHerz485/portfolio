@@ -1,0 +1,20 @@
+@import '../../shared/styles/animations.scss';
+
+.syncLeftRight{
+    view-timeline-name: --leftAnimation;
+    view-timeline-axis: block;
+
+    animation-timeline: --leftAnimation;
+    
+
+    animation-range: entry 0% cover 30%;
+    animation-fill-mode: both;
+}
+
+.syncLeftRight:nth-child(odd){
+    animation-name: rightToLeft;
+}
+
+.syncLeftRight:nth-child(even){
+    animation-name: leftToRight;
+}
