@@ -1,5 +1,8 @@
-<section class="p-0">
+<section [ngClass]="{ 'bg-slate-900': nightMode$ | async }" class="p-0">
     <div
+        [ngClass]="{
+            'filter invert': nightMode$ | async
+        }"
         class="fixed z-10 left-[80%] md:left-[85%] lg:left-[85%] xl:left-[87%] m-2">
         <button class="rounded-full p-1 bg-white" (click)="closeModal()">
             <fa-icon [icon]="closeIcon"></fa-icon>
@@ -22,20 +25,38 @@
 
         <div class="lg:w-1/2 h-full p-4">
             <div class="p-4">
-                <h2 class="text-2xl font-semibold mb-2">
+                <h2
+                    class="text-2xl font-semibold mb-2"
+                    [ngClass]="{
+                        'filter invert': nightMode$ | async
+                    }">
                     {{ enumKeys.proyectosKeyTranslate.TITULOMODAL | translate }}
                 </h2>
                 <hr />
-                <p class="text-xl mt-4">
+                <p
+                    class="text-xl mt-4"
+                    [ngClass]="{
+                        'filter invert': nightMode$ | async
+                    }">
                     {{ enumKeys.genericosKeyTranslate.PROYECTOS | translate }}
                     {{ data.titulo }}
                 </p>
                 <p class="text-md text-ternary-500">
                     {{ data.entidad | translate }} - {{ data.lugar }}
                 </p>
-                <p class="mt-4">{{ data.descripcion | translate }}</p>
+                <p
+                    class="mt-4"
+                    [ngClass]="{
+                        'filter invert': nightMode$ | async
+                    }">
+                    {{ data.descripcion | translate }}
+                </p>
 
-                <h3 class="mt-6 font-semibold mb-2">
+                <h3
+                    class="mt-6 font-semibold mb-2"
+                    [ngClass]="{
+                        'filter invert': nightMode$ | async
+                    }">
                     {{
                         enumKeys.genericosKeyTranslate.COMPETENCIASTECNICAS
                             | translate

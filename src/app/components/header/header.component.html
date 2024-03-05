@@ -1,8 +1,8 @@
 <nav
-    [class.bg-current]="openMenu"
-    [class.justify-center]="openMenu"
-    [class.justify-between]="!openMenu"
-    class="flex backdrop-blur-md items-center sm:justify-evenly bg-[rgba(255,255,255,0.57)] p-8 border-0 border-b-[1px] border-ternary">
+    [ngClass]="{ 'justify-center': openMenu }"
+    [ngClass]="{ 'justify-between': !openMenu }"
+    [ngClass]="{ 'bg-[rgba(255,255,255,0.s57)]': !isDarkMode }"
+    class="flex justify-between backdrop-blur-md items-center sm:justify-evenly p-8 border-0 border-b-[1px] border-ternary">
     <a class="text-3xl text-secondary flex items-center cursor-pointer">
         <strong [class.text-white]="openMenu">Wayless</strong>
         <span class="text-primary-500">.</span>
@@ -68,6 +68,7 @@
         <div class="lg:hidden">
             <button (click)="toggleMenu()">
                 <img
+                    [ngClass]="{ 'filter invert': isDarkMode }"
                     src="../../../assets/icons/generics/menu.svg"
                     alt=""
                     class="max-h-5" />

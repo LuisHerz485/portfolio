@@ -1,8 +1,12 @@
 <div [class.overlay]="openMenu$ | async"></div>
-<header class="fixed top-0 z-10 w-full transition duration-300 ease-in-out">
+<header
+    class="fixed top-0 z-10 w-full transition duration-300 ease-in-out"
+    [ngClass]="{ 'bg-slate-900 text-white': nightMode$ | async }">
     <app-header id=""></app-header>
 </header>
-<main class="relative">
+<main
+    class="relative"
+    [ngClass]="{ 'bg-slate-900 text-white': nightMode$ | async }">
     <app-quien-soy id="inicio"></app-quien-soy>
     <app-descripcion id="acercademi"></app-descripcion>
     <app-proyectos id="proyectos"></app-proyectos>

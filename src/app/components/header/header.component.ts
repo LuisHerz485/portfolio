@@ -7,13 +7,14 @@ import { TapToTopService } from '../../shared/services/tap-to-top.service';
 import { opciones } from '../../shared/data';
 import { IOpciones } from '../../shared/interfaces';
 import { LanguageService } from '../../shared/services/language.service';
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 import { TranslatePipe } from '../../shared/pipes';
+import { NightModeService } from '../../shared/services/night-mode.service';
 
 @Component({
     selector: 'app-header',
     standalone: true,
-    imports: [FontAwesomeModule, AsyncPipe, TranslatePipe],
+    imports: [FontAwesomeModule, AsyncPipe, TranslatePipe, CommonModule],
 
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss',
@@ -31,6 +32,7 @@ export class HeaderComponent {
     private menuService = inject(NavigationService);
     public tap2TopService = inject(TapToTopService);
     private languagueService = inject(LanguageService);
+    private nightModeService = inject(NightModeService);
 
     get idioma(): string {
         return this.isSpanish ? 'es' : 'en';
@@ -42,12 +44,12 @@ export class HeaderComponent {
 
     public escogerIdioma(): void {
         this.isSpanish = !this.isSpanish;
-        console.log(this.idioma);
         this.languagueService.setLanguage(this.idioma);
     }
 
     public escogerModo(): void {
         this.isDarkMode = !this.isDarkMode;
+        this.nightModeService.nightMode(this.isDarkMode);
     }
 
     public toggleMenu(): void {

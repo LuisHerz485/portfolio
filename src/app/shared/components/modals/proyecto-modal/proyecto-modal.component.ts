@@ -11,11 +11,13 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { IProyecto } from '../../../interfaces';
 import { TranslatePipe } from '../../../pipes';
 import * as enumKeys from '../../../enums';
+import { NightModeService } from '../../../services/night-mode.service';
+import { AsyncPipe, CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-proyecto-modal',
     standalone: true,
-    imports: [FontAwesomeModule, TranslatePipe],
+    imports: [FontAwesomeModule, TranslatePipe, AsyncPipe, CommonModule],
     templateUrl: './proyecto-modal.component.html',
     styleUrl: './proyecto-modal.component.scss',
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -23,6 +25,11 @@ import * as enumKeys from '../../../enums';
 export class ProyectoModalComponent {
     public closeIcon = faClose;
     public enumKeys: typeof enumKeys = enumKeys;
+
+    private nightModeService = inject(NightModeService);
+
+    public nightMode$ = this.nightModeService.nightMode$;
+
     constructor(@Inject(MAT_DIALOG_DATA) public data: IProyecto) {}
 
     private dlgRef = inject(DialogRef);

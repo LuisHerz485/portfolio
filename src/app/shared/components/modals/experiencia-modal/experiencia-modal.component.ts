@@ -8,11 +8,13 @@ import { IExperiencia } from '../../../interfaces';
 import * as enumKeys from '../../../enums';
 import { TranslatePipe } from '../../../pipes';
 import { LanguageService } from '../../../services/language.service';
+import { NightModeService } from '../../../services/night-mode.service';
+import { AsyncPipe, CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-experiencia-modal',
     standalone: true,
-    imports: [FontAwesomeModule, TranslatePipe],
+    imports: [FontAwesomeModule, TranslatePipe, AsyncPipe, CommonModule],
     providers: [TranslatePipe],
 
     templateUrl: './experiencia-modal.component.html',
@@ -28,6 +30,9 @@ export class ExperienciaModalComponent {
 
     private dialogRef = inject(DialogRef);
     private translatePipeService = inject(TranslatePipe);
+    private nightModeService = inject(NightModeService);
+
+    public nightMode$ = this.nightModeService.nightMode$;
 
     constructor(@Inject(MAT_DIALOG_DATA) public infoExperiencia: IExperiencia) {
         this.translateArrays(infoExperiencia.tareas[0]);

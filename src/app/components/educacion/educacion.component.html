@@ -1,5 +1,4 @@
-<section
-    class="sm:m-20 sm:pl-60 sm:pr-60 md:m-20 md:pl-20 md:pr-20 text-center">
+<section class="py-20 md:px-20 lg:px-60 text-center">
     <div>
         <h1 class="text-xl text-center text-primary-400 font-semibold">
             {{ enumKeys.estudiosKeyTranslate.TITLE | translate }}
@@ -8,17 +7,21 @@
             {{ enumKeys.estudiosKeyTranslate.SUBTITULO | translate }}
         </p>
     </div>
-    <div class="mt-5 lg:flex">
+    <div class="mt-5 xl:flex">
         @for (estudio of estudios; track $index) {
             <div
                 class="sm:w-1/3 md:w-full sm:mr-1 sm:ml-1 m-2 border-2 p-4 flex flex-col items-center shadow-sm hover:shadow-lg rounded-lg">
-                <img [src]="estudio.logo" alt="" class="max-w-32" />
+                <img
+                    [ngClass]="{ 'filter invert': nightMode$ | async }"
+                    [src]="estudio.logo"
+                    alt=""
+                    class="max-w-32" />
 
                 <h6 class="text-sm mt-4">
                     {{ estudio.institucion | translate }}
                 </h6>
                 <h5
-                    class="text-base bg-primary-400 rounded-full lg:rounded-lg xl:rounded-full text-white pt-1 pb-1 pl-4 pr-4 font-semibold">
+                    class="text-base bg-primary-400 rounded-full lg:rounded-lg xl:rounded-full text-white py-2 px-6 font-semibold">
                     {{ estudio.carrera | translate }}
                 </h5>
                 <h5 class="font-normal text-sm mt-1 mb-2">

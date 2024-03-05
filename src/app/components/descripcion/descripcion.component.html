@@ -1,4 +1,5 @@
 <section
+    [ngClass]="{ 'bg-slate-900': nightMode$ | async }"
     class="bg-white sm:min-h-80 p-8 mt-10 mb-10 md:p-32 lg:p-10 xl:p-16 lg:flex lg:justify-center">
     <div class="xl:w-1/3 xl:p-2 lg:p-10 lg:ml-24 xl:ml-0">
         <h2 class="text-primary-400 font-bold text-xl uppercase">
@@ -19,7 +20,10 @@
                 href="https://www.linkedin.com/in/lhernandez1995/"
                 target="_blank">
                 <svg
-                    class="w-10 text-ternary-500 p-2 border border-ternary-500 rounded-full cursor-pointer mr-2"
+                    [ngClass]="{
+                        'filter invert': nightMode$ | async
+                    }"
+                    class="w-10 p-2 text-ternary-500 border-ternary-500 border rounded-full cursor-pointer mr-2"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 50 50">
                     <path
@@ -33,6 +37,9 @@
                 target="_blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    [ngClass]="{
+                        'filter invert': nightMode$ | async
+                    }"
                     class="w-10 text-ternary-500 p-2 border border-ternary-500 rounded-full cursor-pointer mr-2"
                     viewBox="0 0 50 50">
                     <path
@@ -46,6 +53,9 @@
                 target="_blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    [ngClass]="{
+                        'filter invert': nightMode$ | async
+                    }"
                     class="w-10 text-ternary-500 p-2 border border-ternary-500 rounded-full cursor-pointer mr-2"
                     viewBox="0 0 50 50">
                     <path

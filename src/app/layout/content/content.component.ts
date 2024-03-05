@@ -8,13 +8,15 @@ import { TimelineTrabajosComponent } from '../../components/timeline-trabajos/ti
 import { EducacionComponent } from '../../components/educacion/educacion.component';
 import { ConocimientosComponent } from '../../components/conocimientos/conocimientos.component';
 import { NavigationService } from '../../shared/services/navigation.service';
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 import { TapToTopComponent } from '../../shared/components/tap-to-top/tap-to-top.component';
+import { NightModeService } from '../../shared/services/night-mode.service';
 
 @Component({
     selector: 'app-content',
     standalone: true,
     imports: [
+        CommonModule,
         QuienSoyComponent,
         DescripcionComponent,
         ProyectosComponent,
@@ -32,8 +34,10 @@ import { TapToTopComponent } from '../../shared/components/tap-to-top/tap-to-top
 })
 export class ContentComponent {
     private menuService = inject(NavigationService);
+    private nightModeService = inject(NightModeService);
 
-    openMenu$ = this.menuService.myBoolean$;
+    public openMenu$ = this.menuService.myBoolean$;
+    public nightMode$ = this.nightModeService.nightMode$;
 
     @HostListener('document:contextmenu', ['$event'])
     clickout(event: Event): void {

@@ -16,6 +16,7 @@ import { IProyecto } from '../../shared/interfaces';
 import { NgOptimizedImage } from '@angular/common';
 import * as enumKeys from '../../shared/enums';
 import { TranslatePipe } from '../../shared/pipes';
+import { panelClassResponsiveModal } from '../../shared/constants';
 
 @Component({
     selector: 'app-proyectos',
@@ -75,10 +76,7 @@ export class ProyectosComponent {
     public openModalProyecto(proyecto: IProyecto) {
         this.dialogRef.open(ProyectoModalComponent, {
             disableClose: true,
-            minWidth: '80vw',
-            minHeight: '40vw',
-            maxWidth: '80vw',
-            maxHeight: '130vw',
+            panelClass: [...panelClassResponsiveModal],
             data: proyecto,
         });
     }

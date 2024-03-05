@@ -1,19 +1,26 @@
-<section class="p-0">
+<section [ngClass]="{ 'bg-slate-900': nightMode$ | async }" class="p-0">
     <div
         class="fixed z-10 left-[80%] md:left-[85%] lg:left-[85%] xl:left-[87%] m-2">
-        <button class="rounded-full p-1 bg-white" (click)="closeModal()">
+        <button
+            [ngClass]="{ 'filter invert': nightMode$ | async }"
+            class="rounded-full p-1 bg-white"
+            (click)="closeModal()">
             <fa-icon [icon]="closeIcon"></fa-icon>
         </button>
     </div>
     <div class="lg:flex p-2">
         <div class="lg:w-1/2 p-4">
             <div class="md:p-1">
-                <h2 class="text-2xl font-semibold mb-2">
+                <h2
+                    [ngClass]="{ 'filter invert': nightMode$ | async }"
+                    class="text-2xl font-semibold mb-2">
                     {{ enumKeys.proyectosKeyTranslate.TITULOMODAL | translate }}
                 </h2>
                 <hr />
                 <div class="flex justify-between items-center">
-                    <p class="text-xl mt-4">
+                    <p
+                        [ngClass]="{ 'filter invert': nightMode$ | async }"
+                        class="text-xl mt-4">
                         {{ infoExperiencia.puesto | translate }}
                     </p>
                     <span
@@ -29,7 +36,9 @@
                     >{{ infoExperiencia.periodo | translate }}</span
                 >
 
-                <ul class="text-md list-disc list-inside mt-4 ml-1">
+                <ul
+                    [ngClass]="{ 'filter invert': nightMode$ | async }"
+                    class="text-md list-disc list-inside mt-4 ml-1">
                     @for (tareas of arrayTareas; track $index) {
                         <li class="my-1">
                             {{ tareas }}
@@ -53,7 +62,9 @@
                 }
             </div>
             <div class="md:p-1">
-                <h4 class="mt-2 font-semibold">
+                <h4
+                    [ngClass]="{ 'filter invert': nightMode$ | async }"
+                    class="mt-2 font-semibold">
                     {{
                         enumKeys.genericosKeyTranslate.COMPETENCIASTECNICAS
                             | translate
@@ -82,6 +93,10 @@
                                 }
                             </div>
                             <label
+                                [ngClass]="{
+                                    'text-white bg-slate-900':
+                                        nightMode$ | async
+                                }"
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
@@ -113,6 +128,10 @@
                                 }
                             </div>
                             <label
+                                [ngClass]="{
+                                    'text-white bg-slate-900':
+                                        nightMode$ | async
+                                }"
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
@@ -144,6 +163,10 @@
                                 }
                             </div>
                             <label
+                                [ngClass]="{
+                                    'text-white bg-slate-900':
+                                        nightMode$ | async
+                                }"
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >Frameworks</label
@@ -172,6 +195,10 @@
                                 }
                             </div>
                             <label
+                                [ngClass]="{
+                                    'text-white bg-slate-900':
+                                        nightMode$ | async
+                                }"
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
@@ -203,6 +230,10 @@
                                 }
                             </div>
                             <label
+                                [ngClass]="{
+                                    'text-white bg-slate-900':
+                                        nightMode$ | async
+                                }"
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
@@ -234,6 +265,10 @@
                                 }
                             </div>
                             <label
+                                [ngClass]="{
+                                    'text-white bg-slate-900':
+                                        nightMode$ | async
+                                }"
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
@@ -265,6 +300,10 @@
                                 }
                             </div>
                             <label
+                                [ngClass]="{
+                                    'text-white bg-slate-900':
+                                        nightMode$ | async
+                                }"
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
@@ -296,6 +335,10 @@
                                 }
                             </div>
                             <label
+                                [ngClass]="{
+                                    'text-white bg-slate-900':
+                                        nightMode$ | async
+                                }"
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{

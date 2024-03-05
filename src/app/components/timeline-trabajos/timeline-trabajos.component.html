@@ -36,6 +36,7 @@
                         {{ experiencia.descripcionBreve | translate }}
                     </div>
                     <div
+                        [ngClass]="{ 'text-primary-200': nightMode | async }"
                         (click)="openModalExperiencia(experiencia)"
                         class="cursor-pointer mt-2 flex justify-end text-sm hover:text-primary-400">
                         {{
