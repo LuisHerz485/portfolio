@@ -1,9 +1,11 @@
-<section [ngClass]="{ 'bg-slate-900': nightMode$ | async }" class="p-0">
+<section
+    [ngClass]="{ 'bg-slate-900': nightMode$ | async }"
+    class="p-0 relative">
     <div
         [ngClass]="{
             'filter invert': nightMode$ | async
         }"
-        class="fixed z-10 left-[80%] md:left-[85%] lg:left-[85%] xl:left-[87%] m-2">
+        class="absolute top-0 right-0 m-2">
         <button class="rounded-full p-1 bg-white" (click)="closeModal()">
             <fa-icon [icon]="closeIcon"></fa-icon>
         </button>

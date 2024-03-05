@@ -8,10 +8,10 @@ import { DialogRef } from '@angular/cdk/dialog';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { IProyecto } from '../../../interfaces';
-import { TranslatePipe } from '../../../pipes';
-import * as enumKeys from '../../../enums';
-import { NightModeService } from '../../../services/night-mode.service';
+import { IProyecto } from '@/app/shared/interfaces';
+import { TranslatePipe } from '@/app/shared/pipes';
+import * as enumKeys from '@/app/shared/enums';
+import { NightModeService } from '@/app/shared/services/night-mode.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 
 @Component({

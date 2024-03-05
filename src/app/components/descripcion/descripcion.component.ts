@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { info } from '../../shared/data';
-import * as enumKey from '../../shared/enums';
-import { TranslatePipe } from '../../shared/pipes';
-import { NightModeService } from '../../shared/services/night-mode.service';
+import { info } from '@/app/shared/data';
+import * as enumKey from '@/app/shared/enums';
+import { TranslatePipe } from '@/app/shared/pipes';
+import { NightModeService } from '@/app/shared/services/night-mode.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 
 @Component({
@@ -17,6 +17,6 @@ export class DescripcionComponent {
     public info: string = info;
     public enumKey: typeof enumKey = enumKey;
 
-    private nightModeService = inject(NightModeService);
+    public nightModeService = inject(NightModeService);
     public nightMode$ = this.nightModeService.nightMode$;
 }

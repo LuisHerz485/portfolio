@@ -1,5 +1,5 @@
 import { Component, HostListener, inject } from '@angular/core';
-import { TapToTopService } from '../../services/tap-to-top.service';
+import { TapToTopService } from '@/app/shared/services/tap-to-top.service';
 
 @Component({
     selector: 'app-tap-to-top',

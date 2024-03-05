@@ -1,9 +1,9 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { estudios } from '../../shared/data';
-import { TranslatePipe } from '../../shared/pipes';
-import * as enumKeys from '../../shared/enums';
-import { LanguageService } from '../../shared/services/language.service';
-import { NightModeService } from '../../shared/services/night-mode.service';
+import { Component, inject } from '@angular/core';
+import { estudios } from '@/app/shared/data';
+import { TranslatePipe } from '@/app/shared/pipes';
+import * as enumKeys from '@/app/shared/enums';
+import { LanguageService } from '@/app/shared/services/language.service';
+import { NightModeService } from '@/app/shared/services/night-mode.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 
 @Component({

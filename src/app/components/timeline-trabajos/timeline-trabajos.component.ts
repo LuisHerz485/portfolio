@@ -1,14 +1,14 @@
 import { Component, inject } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { experiencia } from '../../shared/data/experiencia.data';
+import { experiencia } from '@/app/shared/data/experiencia.data';
 import { MatDialog } from '@angular/material/dialog';
-import { ExperienciaModalComponent } from '../../shared/components/modals/experiencia-modal/experiencia-modal.component';
-import * as enumKeys from '../../shared/enums';
-import { TranslatePipe } from '../../shared/pipes';
-import { panelClassResponsiveModal } from '../../shared/constants';
-import { NightModeService } from '../../shared/services/night-mode.service';
+import { ExperienciaModalComponent } from '@/app/shared/components/modals/experiencia-modal/experiencia-modal.component';
+import * as enumKeys from '@/app/shared/enums';
+import { TranslatePipe } from '@/app/shared/pipes';
+import { NightModeService } from '@/app/shared/services/night-mode.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
+import { IExperiencia } from '@/app/shared/interfaces';
 
 @Component({
     selector: 'app-timeline-trabajos',
@@ -28,10 +28,16 @@ export class TimelineTrabajosComponent {
 
     public nightMode = this.nightModeService.nightMode$;
 
-    public openModalExperiencia(experiencia: any): void {
+    public openModalExperiencia(experiencia: IExperiencia): void {
         this.dlgRef.open(ExperienciaModalComponent, {
             disableClose: true,
-            panelClass: [...panelClassResponsiveModal],
+            panelClass: [
+                'max-h-[120vw]',
+                'sm:max-h-[40vw]',
+                'md:max-h-[80vw]',
+                'lg:max-h-[50vw]',
+                'xl:max-h-[50vw]',
+            ],
             data: experiencia,
         });
     }

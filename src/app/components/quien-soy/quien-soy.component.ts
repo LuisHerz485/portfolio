@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faArrowRight, faFilePdf } from '@fortawesome/free-solid-svg-icons';
-import { TranslatePipe } from '../../shared/pipes';
-import * as enumsKey from '../../shared/enums/';
-import { NightModeService } from '../../shared/services/night-mode.service';
+import { TranslatePipe } from '@/app/shared/pipes';
+import * as enumsKey from '@/app/shared/enums/';
+import { NightModeService } from '@/app/shared/services/night-mode.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 
 @Component({

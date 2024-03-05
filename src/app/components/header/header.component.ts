@@ -1,15 +1,15 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { NavigationService } from '../../shared/services/navigation.service';
-import { TapToTopService } from '../../shared/services/tap-to-top.service';
-import { opciones } from '../../shared/data';
-import { IOpciones } from '../../shared/interfaces';
-import { LanguageService } from '../../shared/services/language.service';
+import { NavigationService } from '@/app/shared/services/navigation.service';
+import { TapToTopService } from '@/app/shared/services/tap-to-top.service';
+import { opciones } from '@/app/shared/data';
+import { IOpciones } from '@/app/shared/interfaces';
+import { LanguageService } from '@/app/shared/services/language.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
-import { TranslatePipe } from '../../shared/pipes';
-import { NightModeService } from '../../shared/services/night-mode.service';
+import { TranslatePipe } from '@/app/shared/pipes';
+import { NightModeService } from '@/app/shared/services/night-mode.service';
 
 @Component({
     selector: 'app-header',

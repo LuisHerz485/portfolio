@@ -2,13 +2,12 @@ import { DialogRef } from '@angular/cdk/dialog';
 import { Component, Inject, inject } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
-import { experiencia } from '../../../data';
+import { experiencia } from '@/app/shared/data';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { IExperiencia } from '../../../interfaces';
-import * as enumKeys from '../../../enums';
-import { TranslatePipe } from '../../../pipes';
-import { LanguageService } from '../../../services/language.service';
-import { NightModeService } from '../../../services/night-mode.service';
+import { IExperiencia } from '@/app/shared/interfaces';
+import * as enumKeys from '@/app/shared/enums';
+import { TranslatePipe } from '@/app/shared/pipes';
+import { NightModeService } from '@/app/shared/services/night-mode.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 
 @Component({
@@ -30,7 +29,7 @@ export class ExperienciaModalComponent {
 
     private dialogRef = inject(DialogRef);
     private translatePipeService = inject(TranslatePipe);
-    private nightModeService = inject(NightModeService);
+    public nightModeService = inject(NightModeService);
 
     public nightMode$ = this.nightModeService.nightMode$;
 

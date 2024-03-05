@@ -1,22 +1,13 @@
-import {
-    Component,
-    CUSTOM_ELEMENTS_SCHEMA,
-    ElementRef,
-    HostListener,
-    inject,
-    NgZone,
-    OnDestroy,
-    OnInit,
-} from '@angular/core';
-import { proyectos } from '../../shared/data';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
+import { proyectos } from '@/app/shared/data';
 import { CommonModule } from '@angular/common';
-import { ProyectoModalComponent } from '../../shared/components/modals/proyecto-modal/proyecto-modal.component';
+import { ProyectoModalComponent } from '@/app/shared/components/modals/proyecto-modal/proyecto-modal.component';
 import { MatDialog } from '@angular/material/dialog';
-import { IProyecto } from '../../shared/interfaces';
+import { IProyecto } from '@/app/shared/interfaces';
 import { NgOptimizedImage } from '@angular/common';
-import * as enumKeys from '../../shared/enums';
-import { TranslatePipe } from '../../shared/pipes';
-import { panelClassResponsiveModal } from '../../shared/constants';
+import * as enumKeys from '@/app/shared/enums';
+import { TranslatePipe } from '@/app/shared/pipes';
+import { panelClassResponsiveModal } from '@/app/shared/constants';
 
 @Component({
     selector: 'app-proyectos',
@@ -32,11 +23,6 @@ import { panelClassResponsiveModal } from '../../shared/constants';
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ProyectosComponent {
-    private elementRef = inject(ElementRef);
-    private ngZone = inject(NgZone);
-
-    private intersectionObserver!: IntersectionObserver;
-
     public enumKeys: typeof enumKeys = enumKeys;
     public openModal: boolean = false;
     public dataProyectos = proyectos;

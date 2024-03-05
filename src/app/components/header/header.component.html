@@ -2,12 +2,11 @@
     [ngClass]="{ 'justify-center': openMenu }"
     [ngClass]="{ 'justify-between': !openMenu }"
     [ngClass]="{ 'bg-[rgba(255,255,255,0.s57)]': !isDarkMode }"
-    class="flex justify-between backdrop-blur-md items-center sm:justify-evenly p-8 border-0 border-b-[1px] border-ternary">
+    class="flex justify-between backdrop-blur-md items-center md:justify-between p-8 md:px-28 lg:px-64 border-0 border-b-[1px] border-ternary">
     <a class="text-3xl text-secondary flex items-center cursor-pointer">
         <strong [class.text-white]="openMenu">Wayless</strong>
         <span class="text-primary-500">.</span>
     </a>
-
     <div class="hidden lg:flex space-x-4">
         <ul class="flex text-base font-medium">
             @for (opcion of opciones; track $index) {
@@ -76,7 +75,7 @@
         </div>
     }
 
-    <div class="hidden sm:block">
+    <div class="hidden lg:block">
         <div class="text-sky-50" [class.hidden]="openMenu">
             <button (click)="escogerIdioma()" class="text-primary-400">
                 {{ idioma.toUpperCase() }}

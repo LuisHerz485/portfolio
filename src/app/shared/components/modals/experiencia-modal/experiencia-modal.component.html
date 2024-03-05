@@ -1,6 +1,7 @@
-<section [ngClass]="{ 'bg-slate-900': nightMode$ | async }" class="p-0">
-    <div
-        class="fixed z-10 left-[80%] md:left-[85%] lg:left-[85%] xl:left-[87%] m-2">
+<section
+    [ngClass]="{ 'bg-slate-900': nightMode$ | async }"
+    class="p-0 relative">
+    <div class="absolute top-0 right-0 m-2">
         <button
             [ngClass]="{ 'filter invert': nightMode$ | async }"
             class="rounded-full p-1 bg-white"
@@ -94,8 +95,12 @@
                             </div>
                             <label
                                 [ngClass]="{
-                                    'text-white bg-slate-900':
-                                        nightMode$ | async
+                                    'bg-slate-900 text-white':
+                                        (nightModeService.nightMode$
+                                            | async) === true,
+                                    'bg-white':
+                                        (nightModeService.nightMode$
+                                            | async) === false
                                 }"
                                 for="basic"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
@@ -110,7 +115,7 @@
                     @if (infoExperiencia.skills.lenguajes) {
                         <div class="my-2 relative">
                             <div
-                                id="basic"
+                                id="lenguajes"
                                 class="flex justify-evenly border-2 rounded-xl p-2">
                                 @for (
                                     skill of infoExperiencia.skills.lenguajes;
@@ -129,10 +134,14 @@
                             </div>
                             <label
                                 [ngClass]="{
-                                    'text-white bg-slate-900':
-                                        nightMode$ | async
+                                    'bg-slate-900 text-white':
+                                        (nightModeService.nightMode$
+                                            | async) === true,
+                                    'bg-white':
+                                        (nightModeService.nightMode$
+                                            | async) === false
                                 }"
-                                for="basic"
+                                for="lenguajes"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
                                     enumKeys.genericosKeyTranslate.LENGUAJES
@@ -145,7 +154,7 @@
                     @if (infoExperiencia.skills.frameworks) {
                         <div class="my-2 relative">
                             <div
-                                id="basic"
+                                id="frameworks"
                                 class="flex justify-evenly border-2 rounded-xl p-2">
                                 @for (
                                     skill of infoExperiencia.skills.frameworks;
@@ -164,10 +173,14 @@
                             </div>
                             <label
                                 [ngClass]="{
-                                    'text-white bg-slate-900':
-                                        nightMode$ | async
+                                    'bg-slate-900 text-white':
+                                        (nightModeService.nightMode$
+                                            | async) === true,
+                                    'bg-white':
+                                        (nightModeService.nightMode$
+                                            | async) === false
                                 }"
-                                for="basic"
+                                for="frameworks"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >Frameworks</label
                             >
@@ -177,7 +190,7 @@
                     @if (infoExperiencia.skills.tools) {
                         <div class="my-2 relative">
                             <div
-                                id="basic"
+                                id="tools"
                                 class="flex justify-evenly border-2 rounded-xl p-2">
                                 @for (
                                     skill of infoExperiencia.skills.tools;
@@ -196,10 +209,14 @@
                             </div>
                             <label
                                 [ngClass]="{
-                                    'text-white bg-slate-900':
-                                        nightMode$ | async
+                                    'bg-slate-900 text-white':
+                                        (nightModeService.nightMode$
+                                            | async) === true,
+                                    'bg-white':
+                                        (nightModeService.nightMode$
+                                            | async) === false
                                 }"
-                                for="basic"
+                                for="tools"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
                                     enumKeys.genericosKeyTranslate.HERRAMIENTAS
@@ -212,7 +229,7 @@
                     @if (infoExperiencia.skills.bd) {
                         <div class="my-2 relative">
                             <div
-                                id="basic"
+                                id="bd"
                                 class="flex justify-evenly border-2 rounded-xl p-2">
                                 @for (
                                     skill of infoExperiencia.skills.bd;
@@ -231,10 +248,14 @@
                             </div>
                             <label
                                 [ngClass]="{
-                                    'text-white bg-slate-900':
-                                        nightMode$ | async
+                                    'bg-slate-900 text-white':
+                                        (nightModeService.nightMode$
+                                            | async) === true,
+                                    'bg-white':
+                                        (nightModeService.nightMode$
+                                            | async) === false
                                 }"
-                                for="basic"
+                                for="bd"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
                                     enumKeys.genericosKeyTranslate.BD
@@ -247,7 +268,7 @@
                     @if (infoExperiencia.skills.geo) {
                         <div class="my-2 relative">
                             <div
-                                id="basic"
+                                id="geo"
                                 class="flex justify-evenly border-2 rounded-xl p-2">
                                 @for (
                                     skill of infoExperiencia.skills.geo;
@@ -266,10 +287,14 @@
                             </div>
                             <label
                                 [ngClass]="{
-                                    'text-white bg-slate-900':
-                                        nightMode$ | async
+                                    'bg-slate-900 text-white':
+                                        (nightModeService.nightMode$
+                                            | async) === true,
+                                    'bg-white':
+                                        (nightModeService.nightMode$
+                                            | async) === false
                                 }"
-                                for="basic"
+                                for="geo"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
                                     enumKeys.genericosKeyTranslate.GEO
@@ -282,7 +307,7 @@
                     @if (infoExperiencia.skills.metodology) {
                         <div class="my-2 relative">
                             <div
-                                id="basic"
+                                id="metodology"
                                 class="flex justify-evenly border-2 rounded-xl p-2">
                                 @for (
                                     skill of infoExperiencia.skills.metodology;
@@ -301,10 +326,14 @@
                             </div>
                             <label
                                 [ngClass]="{
-                                    'text-white bg-slate-900':
-                                        nightMode$ | async
+                                    'bg-slate-900 text-white':
+                                        (nightModeService.nightMode$
+                                            | async) === true,
+                                    'bg-white':
+                                        (nightModeService.nightMode$
+                                            | async) === false
                                 }"
-                                for="basic"
+                                for="metodology"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
                                     enumKeys.genericosKeyTranslate.METODOLOGIAS
@@ -317,7 +346,7 @@
                     @if (infoExperiencia.skills.versionable) {
                         <div class="my-2 relative">
                             <div
-                                id="basic"
+                                id="versionable"
                                 class="flex justify-evenly border-2 rounded-xl p-2">
                                 @for (
                                     skill of infoExperiencia.skills.versionable;
@@ -336,10 +365,14 @@
                             </div>
                             <label
                                 [ngClass]="{
-                                    'text-white bg-slate-900':
-                                        nightMode$ | async
+                                    'bg-slate-900 text-white':
+                                        (nightModeService.nightMode$
+                                            | async) === true,
+                                    'bg-white':
+                                        (nightModeService.nightMode$
+                                            | async) === false
                                 }"
-                                for="basic"
+                                for="versionable"
                                 class="text-xs absolute bg-white px-2 -top-2 left-2 text-gray-600"
                                 >{{
                                     enumKeys.genericosKeyTranslate.VERSIONABLE

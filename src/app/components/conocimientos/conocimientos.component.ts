@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { conocimientos } from '../../shared/data';
+import { conocimientos } from '@/app/shared/data';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import * as sharedConstants from '../../shared/constants';
-import { IDataSkill } from '../../shared/interfaces';
-import { TranslatePipe } from '../../shared/pipes';
-import * as enumKeys from '../../shared/enums';
+import * as sharedConstants from '@/app/shared/constants';
+import { IDataSkill } from '@/app/shared/interfaces';
+import { TranslatePipe } from '@/app/shared/pipes';
+import * as enumKeys from '@/app/shared/enums';
 
 @Component({
     selector: 'app-conocimientos',
