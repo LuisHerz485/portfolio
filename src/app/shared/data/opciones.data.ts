@@ -3,10 +3,6 @@ import * as enumKeys from '../enums/translate/header-keys.enum';
 
 export const opciones: IOpciones[] = [
     {
-        titulo: enumKeys.headerKeysTranslate.INICIO,
-        ref: 'inicio',
-    },
-    {
         titulo: enumKeys.headerKeysTranslate.ACERCADEMI,
         ref: 'acercademi',
     },
@@ -15,8 +11,8 @@ export const opciones: IOpciones[] = [
         ref: 'proyectos',
     },
     {
-        titulo: enumKeys.headerKeysTranslate.CONOCIMIENTOS,
-        ref: 'conocimientos',
+        titulo: enumKeys.headerKeysTranslate.EXPERIENCIAS,
+        ref: 'experiencias',
     },
     {
         titulo: enumKeys.headerKeysTranslate.EDUCACION,

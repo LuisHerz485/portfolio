@@ -1,9 +1,14 @@
 <nav
     [ngClass]="{ 'justify-center': openMenu }"
     [ngClass]="{ 'justify-between': !openMenu }"
-    [ngClass]="{ 'bg-[rgba(255,255,255,0.s57)]': !isDarkMode }"
-    class="flex justify-between backdrop-blur-md items-center md:justify-between p-8 md:px-28 lg:px-64 border-0 border-b-[1px] border-ternary">
-    <a class="text-3xl text-secondary flex items-center cursor-pointer">
+    [ngClass]="{
+        'bg-[rgba(255,255,255,0.57)]': !isDarkMode,
+        'bg-[rgba(15,23,42,0.13)]': isDarkMode
+    }"
+    class="flex justify-between backdrop-blur-md items-center md:justify-between p-8 md:px-28 xl:px-64 border-0 border-b-[1px] border-ternary">
+    <a
+        (click)="goToHome()"
+        class="text-3xl text-secondary flex items-center cursor-pointer">
         <strong [class.text-white]="openMenu">Wayless</strong>
         <span class="text-primary-500">.</span>
     </a>

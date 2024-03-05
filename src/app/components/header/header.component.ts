@@ -66,4 +66,8 @@ export class HeaderComponent {
         this.tap2TopService.scrollToDiv(elementId);
         this.closeModal();
     }
+
+    public goToHome() {
+        this.tap2TopService.scrollToDiv('inicio');
+    }
 }

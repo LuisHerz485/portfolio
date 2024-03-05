@@ -33,6 +33,7 @@
             <fa-icon [icon]="filePdf" class="ml-1"></fa-icon>
         </a>
         <button
+            (click)="goToProyectos()"
             class="mt-2 min-w-32 bg-primary-400 text-white p-2 rounded-lg border-primary-400 border-2 hover:bg-primary-500 hover:border-primary-500 hover:shadow-xl">
             {{ enumsKey.quiensoyKeyTranslate.PORTAFOLIO | translate }}
             <fa-icon [icon]="arrowRigth" class="ml-1"></fa-icon>
