@@ -21,9 +21,11 @@
             }}</span>
             {{ enumsKey.quiensoyKeyTranslate.DEVELOPER2 | translate }}
         </h2>
-        <p class="mt-2 mb-2">
-            {{ enumsKey.quiensoyKeyTranslate.DESCRIPCION | translate }}
-        </p>
+        <p
+            class="mt-2 mb-2"
+            [innerHTML]="
+                enumsKey.quiensoyKeyTranslate.DESCRIPCION | translate
+            "></p>
         <a
             href="assets/docs/Hernandez Albia Luis Alberto Junior CV.pdf"
             target="_blank"
