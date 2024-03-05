@@ -2,8 +2,9 @@
     [ngClass]="{ 'justify-center': openMenu }"
     [ngClass]="{ 'justify-between': !openMenu }"
     [ngClass]="{
-        'bg-[rgba(255,255,255,0.57)]': !isDarkMode,
-        'bg-[rgba(15,23,42,0.13)]': isDarkMode
+        'bg-[rgba(255,255,255,0.56)]': isDarkMode === undefined,
+        'bg-[rgba(255,255,255,0.57)]': isDarkMode === false,
+        'bg-[rgba(15,23,42,0.13)]': isDarkMode === true
     }"
     class="flex justify-between backdrop-blur-md items-center md:justify-between p-8 md:px-28 xl:px-64 border-0 border-b-[1px] border-ternary">
     <a
