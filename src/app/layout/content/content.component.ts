@@ -11,6 +11,7 @@ import { NavigationService } from '../../shared/services/navigation.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { TapToTopComponent } from '../../shared/components/tap-to-top/tap-to-top.component';
 import { NightModeService } from '../../shared/services/night-mode.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-content',
@@ -35,6 +36,7 @@ import { NightModeService } from '../../shared/services/night-mode.service';
 export class ContentComponent {
     private menuService = inject(NavigationService);
     private nightModeService = inject(NightModeService);
+    private titleService = inject(Title);
 
     public openMenu$ = this.menuService.myBoolean$;
     public nightMode$ = this.nightModeService.nightMode$;
@@ -47,5 +49,15 @@ export class ContentComponent {
     @HostListener('document:copy', ['$event'])
     onCopy(event: ClipboardEvent): void {
         event.preventDefault();
+    }
+
+    @HostListener('window:blur', ['$event'])
+    handleBlur(event: FocusEvent): void {
+        this.titleService.setTitle('Regresa, te extraño 😭');
+    }
+
+    @HostListener('window:focus', ['$event'])
+    handleFocus(event: FocusEvent): void {
+        this.titleService.setTitle('Luis Hernández - Portfolio 😎');
     }
 }
