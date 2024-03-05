@@ -6,7 +6,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 1,
         entidad: enumKeys.experienciaKeyTranslate.ENTIDADINDECI,
-        logoEntidad: '../../../assets/img/experiencias/logos/indeci.png',
+        logoEntidad: 'assets/img/experiencias/logos/indeci.png',
         periodo: enumKeys.experienciaKeyTranslate.PERIODOINDECI,
         puesto: enumKeys.genericosKeyTranslate.FULLSTACK,
         descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEINDECI,
@@ -62,7 +62,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 3,
         entidad: enumKeys.experienciaKeyTranslate.ENTIDADPLATANITOS,
-        logoEntidad: '../../../assets/img/experiencias/logos/platanitos.png',
+        logoEntidad: 'assets/img/experiencias/logos/platanitos.png',
         periodo: enumKeys.experienciaKeyTranslate.PERIODOPLATANITOS,
         puesto: enumKeys.genericosKeyTranslate.BACKEND,
         descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEPLATANITOS,
@@ -78,7 +78,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 4,
         entidad: enumKeys.experienciaKeyTranslate.ENTIDADFC,
-        logoEntidad: '../../../assets/img/experiencias/logos/fccontadores.webp',
+        logoEntidad: 'assets/img/experiencias/logos/fccontadores.webp',
         periodo: enumKeys.experienciaKeyTranslate.PERIODOFC,
         puesto: enumKeys.genericosKeyTranslate.FULLSTACK,
         descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEFC,
@@ -95,7 +95,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 5,
         entidad: 'Alignet',
-        logoEntidad: '../../../assets/img/experiencias/logos/alignet.jpg',
+        logoEntidad: 'assets/img/experiencias/logos/alignet.jpg',
         periodo: enumKeys.experienciaKeyTranslate.PERIODOALIGNET,
         puesto: enumKeys.genericosKeyTranslate.BACKEND,
         descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEALIGNET,
@@ -111,7 +111,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 6,
         entidad: enumKeys.experienciaKeyTranslate.ENTIDADFOTOLATINO,
-        logoEntidad: '../../../assets/img/experiencias/logos/fotolatino.jpeg',
+        logoEntidad: 'assets/img/experiencias/logos/fotolatino.jpeg',
         periodo: enumKeys.experienciaKeyTranslate.PERIODOFOTOLATINO,
         puesto: enumKeys.genericosKeyTranslate.FULLSTACK,
         descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEFOTOLATINO,
