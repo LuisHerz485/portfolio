@@ -1,4 +1,5 @@
 # Portfolio: Wayless (Luis Hernandez)
+
 - [Portfolio: Wayless (Luis Hernandez)](#portfolio-wayless-luis-hernandez)
     -[Introduccion](#introduccion)
     -[Requerimientos](#requerimientos)
@@ -14,7 +15,7 @@ Este proyecto cuanta con modo oscuro, y la posibilidad de iterar entre el idioma
 ## Requerimientos
 1. Instalar [Node LTS](https://nodejs.org/es/download).
 2. Instalar [Angular Cli 17.2.1](https://angular.io/guide/setup-local)
-    - Realizar la instalacion con la terminal con el comando `npm install -global @angular/cli@17.1.2`
+    - Realizar la instalacion con la terminal con el comando `npm install -global @angular/cli@17.2.1`
 3. Instalar [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Librerias Utilizadas
@@ -38,7 +39,7 @@ Se adjuntan imagenes de previews del portafolio
     ![Modo oscuro desactivado](./.img/wayless1.png)
 
 2. Modo Oscuro activado y en idioma espanol
-    ![Modo oscuro activado]('./.img/wayless2.png)
+    ![Modo oscuro activado]('./.img/oscuro.png)
 
 3. Modo Oscuro desactivado y pagina en idioma ingles
     ![Pagina en ingles](./.img/wayless3.png)
