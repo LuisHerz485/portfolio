@@ -1,27 +1,45 @@
-# Portafoliov1
+# Portfolio: Wayless (Luis Hernandez)
+- [Portfolio: Wayless (Luis Hernandez)](#portfolio-wayless-luis-hernandez)
+    -[Introduccion](#introduccion)
+    -[Requerimientos](#requerimientos)
+    -[Librerias Utilizadas](#librerias-utilizadas)
+    -[Configuracion](#configuracion)
+    -[Ejecucion](#ejecución)
+    -[Preview](#preview)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+## Introduccion
+Proyecto desarrollado por Luis Hernandez aka Wayless. Es un portafolio desarrollado con angular acerca de informacion basica acerca de proyectos, y vida laboral del creador.
+Este proyecto cuanta con modo oscuro, y la posibilidad de iterar entre el idioma Ingles y Espanol.
 
-## Development server
+## Requerimientos
+1. Instalar [Node LTS](https://nodejs.org/es/download).
+2. Instalar [Angular Cli 17.2.1](https://angular.io/guide/setup-local)
+    - Realizar la instalacion con la terminal con el comando `npm install -global @angular/cli@17.1.2`
+3. Instalar [Visual Studio Code](https://code.visualstudio.com/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Librerias Utilizadas
+1. Angular Material [Angular Material](https://material.angular.io/) 
+2. TailwindCSS [Tailwind CSS](https://tailwindcss.com/)
+3. Font Awesome Icons [Font Awesome](https://fontawesome.com/)
+4. RxJs [RxJs](https://rxjs.dev/guide/overview)
+5. Swiper [SwiperJS](https://swiperjs.com/)
 
-## Code scaffolding
+## Configuracion
+1. Clonar el repositorio localmente.
+2. Realizar el `npm install` para poder instalar las dependencias necesarias (si hay un problema con la versión de las dependencias hacer un `npm install --legacy-peer-deps`).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Ejecución
+Para ejecutar por el terminal solo se tiene que hacer el siguiente comando: `ng serve` o `ng serve --open`. Luego de eso se puede abrir un navegador en el puerto http://localhost:4200.
 
-## Build
+## Preview
+Se adjuntan imagenes de previews del portafolio
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Modo Oscuro desactivado y en idioma espanol
+    ![Modo oscuro desactivado](./.img/wayless1.png)
 
-## Running unit tests
+2. Modo Oscuro activado y en idioma espanol
+    ![Modo oscuro activado]('./.img/wayless2.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Modo Oscuro desactivado y pagina en idioma ingles
+    ![Pagina en ingles](./.img/wayless3.png)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
