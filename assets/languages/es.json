@@ -63,7 +63,7 @@
     "EXPERIENCIA.TITULO2" : "Laborales",
 
     "EXPERIENCIA.ENTIDAD.INDECI" : "Instituto Nacional de Defensa Civil",
-    "EXPERIENCIA.PERIODO.INDECI": "Agosto 2022 - Presente",
+    "EXPERIENCIA.PERIODO.INDECI": "Ago 2022 - Presente",
     "EXPERIENCIA.PUESTO.INDECI": "Desarrollador FullStack",
     "EXPERIENCIA.BREVE.INDECI": "Mi participación en el desarrollo del sistema SINPAD v3 del Ministerio de Defensa fue fundamental para gestionar desastres y emergencias nacionales, aportando experiencia para asegurar una respuesta ágil y efectiva, consolidando así un componente esencial en la seguridad nacional.",
     "EXPERIENCIA.TAREAS.INDECI": [
@@ -77,7 +77,7 @@
         "Desplegar el nuevo Front End y Back End del sistema SINPAD 3.0. VISOR GRD, SISCOE para las pruebas."
     ],
 
-    "EXPERIENCIA.PERIODO.POLYSOFT" : "Octubre 2021 - Enero 2022",
+    "EXPERIENCIA.PERIODO.POLYSOFT" : "Oct 2021 - Ene 2022",
     "EXPERIENCIA.BREVE.POLYSOFT" : "En mi experiencia, he trabajado en el desarrollo de proyectos web, centrándome en la creación de sitios destinados a e-Commerce y blogs. Durante este proceso, he implementado y optimizado diversas funcionalidades clave para proporcionar una experiencia integral al usuario.",
     "EXPERIENCIA.TAREAS.POLYSOFT" : [
         "Desarrollo de proyectos web para e-Commerce y blogs.",
@@ -91,7 +91,7 @@
     ],
 
     "EXPERIENCIA.ENTIDAD.PLATANITOS" : "Comercial Mont &quot;Platanitos&quot;",
-    "EXPERIENCIA.PERIODO.PLATANITOS" : "Octubre 2021 - Enero 2022",
+    "EXPERIENCIA.PERIODO.PLATANITOS" : "Oct 2021 - Ene 2022",
     "EXPERIENCIA.BREVE.PLATANITOS" : "Durante el desarrollo del sistema Tutati, nos centramos en gestionar Recursos Humanos (RRHH) y procesos logísticos. Creamos una plataforma que optimiza la administración de personal y mejora la eficiencia logística, proporcionando una solución completa para las necesidades empresariales.",
     "EXPERIENCIA.TAREAS.PLATANITOS" : [
         "Análisis de procesos logísticos para la creación de funcionalidades y automatización del sistema “Tutati”",
@@ -105,7 +105,7 @@
     ],
 
     "EXPERIENCIA.ENTIDAD.FC" : "FC Contadores & Asociados",
-    "EXPERIENCIA.PERIODO.FC" : "Febrero 2021 - Julio 2022",
+    "EXPERIENCIA.PERIODO.FC" : "Feb 2021 - Jul 2022",
     "EXPERIENCIA.BREVE.FC" : "Lideré el desarrollo y mantenimiento de páginas web para FyF Auditores y FC Contadores, así como la creación de sistemas de asistencias e intranet. También implementé con éxito APIs de Google Drive y SUNAT, aplicando mi experiencia en cada fase del proyecto.",
     "EXPERIENCIA.TAREAS.FC" : [
         "Responsable y líder de área de sistemas.",
@@ -115,7 +115,7 @@
         "Implementación de API de Google Drive y SUNAT."
     ],
 
-    "EXPERIENCIA.PERIODO.ALIGNET" : "Febrero 2018 - Julio 2018",
+    "EXPERIENCIA.PERIODO.ALIGNET" : "Feb 2018 - Jul 2018",
     "EXPERIENCIA.BREVE.ALIGNET" : "Desarrollé páginas web e-commerce con un enfoque eficiente y seguro, mejorando la experiencia del usuario mediante atractivos diseños y soluciones personalizadas. Ademas, implementé tecnologías avanzadas para garantizar un rendimiento óptimo en línea durante todo el proyecto.",
     "EXPERIENCIA.TAREAS.ALIGNET" : [
         "Despliegue de Proyectos hacia ambientes de producción",
@@ -125,7 +125,7 @@
     ],
 
     "EXPERIENCIA.ENTIDAD.FOTOLATINO" : "Foto Latino Producciones",
-    "EXPERIENCIA.PERIODO.FOTOLATINO" : "Junio 2016 - Abril 2017",
+    "EXPERIENCIA.PERIODO.FOTOLATINO" : "Jun 2016 - Abr 2017",
     "EXPERIENCIA.BREVE.FOTOLATINO" : "En mi participación en Foto Latinos Producciones construí el sitio web con el objetivo de proporcionar una plataforma visualmente atractiva y funcional que capturara su identidad distintiva. Integré tecnologías avanzadas para asegurar un rendimiento óptimo en línea y una experiencia de usuario intuitiva, trabajando de cerca con el equipo para lograrlo.",
     "EXPERIENCIA.TAREAS.FOTOLATINO" : [
             "Mantenimiento de la página web.",
