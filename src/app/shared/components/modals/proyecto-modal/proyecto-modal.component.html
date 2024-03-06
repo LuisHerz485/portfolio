@@ -10,17 +10,17 @@
             <fa-icon [icon]="closeIcon"></fa-icon>
         </button>
     </div>
-    <div class="lg:flex lg:items-center w-full">
+    <div class="lg:flex lg:items-center mt-10 md:mt-6 xl:mt-0">
         <swiper-container
             slides-per-view="1"
             navigation="true"
-            class="mt-7 md:mb-4 lg:m-0 lg:w-1/2 max-h-[40vw]">
+            class="lg:m-0 lg:w-1/2">
             @for (imagen of data.imagenes; track $index) {
-                <swiper-slide class="w-full overflow-hidden">
+                <swiper-slide class="">
                     <img
                         [src]="imagen"
                         alt=""
-                        class="lg:h-[40rem] object-cover overflow-hidden" />
+                        class="object-cover overflow-hidden lg:min-h-[100vh]" />
                 </swiper-slide>
             }
         </swiper-container>
@@ -73,8 +73,7 @@
                             <span class="tooltiptext text-xs"
                                 >{{ skill.titulo }}
                                 @if (skill.plugins) {
-                                    <br />
-                                    <span>{{ skill.plugins }}</span>
+                                    {{ skill.plugins }}
                                 }
                             </span>
                         </div>
