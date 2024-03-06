@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class TapToTopService {
     public scrollToDiv(elementId: string): void {
         const element = document.getElementById(elementId);
-        const offset = 200;
+        const offset = 100;
 
         if (element) {
             const targetPosition =
