@@ -30,9 +30,10 @@
                         </h5>
                         <hr />
                         <p
-                            class="text-sm font-normal min-h-14 flex items-center text-secondary-500 mt-2 mb-2">
-                            {{ proyecto.descripcionCorta | translate }}
-                        </p>
+                            class="text-sm font-normal min-h-14 flex items-center text-secondary-500 mt-2 mb-2"
+                            [innerHTML]="
+                                proyecto.descripcionCorta | translate
+                            "></p>
                         <hr />
                         <div class="flex justify-center mb-2">
                             @for (

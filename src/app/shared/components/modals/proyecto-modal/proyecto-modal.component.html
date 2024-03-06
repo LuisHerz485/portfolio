@@ -50,9 +50,8 @@
                     class="mt-4"
                     [ngClass]="{
                         'filter invert': nightMode$ | async
-                    }">
-                    {{ data.descripcion | translate }}
-                </p>
+                    }"
+                    [innerHTML]="data.descripcion | translate"></p>
 
                 <h3
                     class="mt-6 font-semibold mb-2"

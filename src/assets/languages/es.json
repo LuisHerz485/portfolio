@@ -3,12 +3,12 @@
     "GENERICOS.PROYECTOS" : "Proyecto",
     "GENERICOS.VERMAS" : "Ver más",
     "GENERICOS.INFORMACION" : "Información",
-    "GENERICOS.BASICOS" : "Basicos",
+    "GENERICOS.BASICOS" : "Básicos",
     "GENERICOS.LENGUAJES": "Lenguajes",
     "GENERICOS.HERRAMIENTAS": "Herramientas",
     "GENERICOS.BD": "Bases de datos",
-    "GENERICOS.GEO": "Georeferencia",
-    "GENERICOS.METODOLOGIAS": "Metodologias",
+    "GENERICOS.GEO": "Georreferencia",
+    "GENERICOS.METODOLOGIAS": "Metodologías",
     "GENERICOS.VERSIONALE": "Gestor de versiones",
     "GENERICOS.FULLSTACK": "Desarrollador FullStack",
     "GENERICOS.FRONTEND": "Desarrollador FrontEnd",
@@ -24,15 +24,15 @@
     "QUIENSOY.HOLA" : "Hola 👋, yo soy",
     "QUIENSOY.DEVELOPER1" : "Desarrollador",
     "QUIENSOY.DEVELOPER2" : "FullStack",
-    "QUIENSOY.DESCRIPCION" : "También me puedes llamar <strong>Wayless</strong> 😏 <br/> tengo más de 3 años desarrollando aplicativos webs para diferentes entidades gubernamentales, e-commerce, entre otros.",
+    "QUIENSOY.DESCRIPCION" : "También me puedes llamar <strong>Wayless</strong> 😌 <br/> tengo más de 3 años desarrollando aplicativos webs para diferentes entidades gubernamentales, e-commerce, entre otros.",
     "QUIENSOY.PORTAFOLIO" : "Portafolio",
 
     "DESCRIPCION.ACERCADEMI" : "ACERCA DE MÍ",
     "DESCRIPCION.TITULO" : "Dinamismo y Productividad, son lo que me representan",
-    "DESCRIPCION.CUERPO" : "Soy Bachiller en Ingeniería de Sistemas Computacionales, con especialización en Mejora Continua, Gestión de Procesos y Calidad. Actualmente, me encuentro cursando la Maestría en Ingeniería de Sistemas con mención en Gerencia de Sistemas de la Información.",
+    "DESCRIPCION.CUERPO" : "Soy Bachiller en Ingeniería de Sistemas Computacionales, con especialización en Mejora Continúa, Gestión de Procesos y Calidad. Actualmente, me encuentro cursando la Maestría en Ingeniería de Sistemas con mención en Gerencia de Sistemas de la Información.",
     
     "PROYECTOS.TITULO" : "¿Buscabas algo? 🤨",
-    "PROYECTOS.SUBTITULO" : "Aqui te dejo algunos proyectos, pero...🤫",
+    "PROYECTOS.SUBTITULO" : "Aquí te dejo algunos proyectos, pero...🤫",
     "PROYECTOS.TITULO.MODAL" : "Información",
 
     "PROYECTOS.ENTIDAD.INDECI" : "Instituto Nacional de Defensa Civil",
@@ -42,8 +42,8 @@
     "PROYECTOS.CORTA.EVANOZ": "Desarrollador web con experiencia en e-Commerce, APIs, optimización y metodología SCRUM.",
     "PROYECTOS.DESCRIPCION.EVANOZ" : "Me he destacado en el desarrollo integral de proyectos web, especializándome en e-Commerce y blogs. Mi experiencia abarca la creación de APIs utilizando Node, así como la implementación de paneles administrativos y tiendas mediante Angular o React. He llevado a cabo la configuración de droplets con Ubuntu y el despliegue de proyectos en servidores VPS para alcanzar una producción eficiente. Además, he demostrado habilidades en la optimización de código, la maquetación de páginas web y la integración de pasarelas de pago mediante API's como Culqi y PayPal. Todos mis proyectos se han gestionado bajo la metodología ágil SCRUM, asegurando un enfoque colaborativo y eficiente en el desarrollo.",
     
-    "PROYECTOS.CORTA.TUTATI" : "Desarrollo y optimización de funcionalidades en sistema logístico 'Tutati' bajo metodología SCRUM.",
-    "PROYECTOS.DESCRIPCION.TUTATI" : "Participé activamente en mejorar el sistema logístico 'Tutati', analizando procesos y automatizando funciones. Enfoqué el desarrollo de nuevas funcionalidades y módulos para seguimiento de delivery, almacén y distribución. Además, me ocupé de modificar y optimizar el código, así como de mantener la base de datos. Implementé el proyecto con la metodología ágil SCRUM, utilizando tecnologías como PHP, AWS (CodeCommit), MySQL y JavaScript.",
+    "PROYECTOS.CORTA.TUTATI" : "Desarrollo y optimización de funcionalidades en sistema logístico &quot;Tutati&quot; bajo metodología SCRUM.",
+    "PROYECTOS.DESCRIPCION.TUTATI" : "Participé activamente en mejorar el sistema logístico &quot;Tutati&quot;, analizando procesos y automatizando funciones. Enfoqué el desarrollo de nuevas funcionalidades y módulos para seguimiento de delivery, almacén y distribución. Además, me ocupé de modificar y optimizar el código, así como de mantener la base de datos. Implementé el proyecto con la metodología ágil SCRUM, utilizando tecnologías como PHP, AWS (CodeCommit), MySQL y JavaScript.",
 
     "PROYECTOS.CORTA.CUENTASCLARAS": "Cree una solución completa para contabilidad y gestión interna altamente eficiente.",
     "PROYECTOS.DESCRIPCION.CUENTASCLARAS": "Recientemente lideré un emocionante proyecto full stack centrado en contabilidad y su intranet, empleando tecnologías como Angular, TypeScript, RxJS, Bootstrap, MySQL, Node.js y NestJS para ofrecer una solución completa. En el frontend, utilicé Angular con TypeScript para construir una interfaz de usuario dinámica y atractiva, aprovechando RxJS para gestionar operaciones asíncronas. La elección de Bootstrap garantizó una experiencia de usuario consistente y responsive. En el backend, implementé microservicios con Node.js y NestJS, permitiendo una arquitectura modular y escalable. MySQL fue la base de datos elegida, asegurando la integridad de los datos contables. La implementación de microservicios no solo facilitó la contabilidad, sino que también permitió la creación de una intranet interna para una gestión eficiente del negocio. El resultado es una solución robusta y fácil de mantener, adaptada a las necesidades específicas del sector contable.",
@@ -89,7 +89,7 @@
         "Proyectos desarrollados con metodología ágil SCRUM."
     ],
 
-    "EXPERIENCIA.ENTIDAD.PLATANITOS" : "Comercial Mont 'Platanitos'",
+    "EXPERIENCIA.ENTIDAD.PLATANITOS" : "Comercial Mont &quot;Platanitos&quot;",
     "EXPERIENCIA.PERIODO.PLATANITOS" : "Octubre 2021 - Enero 2022",
     "EXPERIENCIA.BREVE.PLATANITOS" : "Durante el desarrollo del sistema Tutati, nos centramos en gestionar Recursos Humanos (RRHH) y procesos logísticos. Creamos una plataforma que optimiza la administración de personal y mejora la eficiencia logística, proporcionando una solución completa para las necesidades empresariales.",
     "EXPERIENCIA.TAREAS.PLATANITOS" : [
@@ -124,7 +124,7 @@
     ],
 
     "EXPERIENCIA.ENTIDAD.FOTOLATINO" : "Foto Latino Producciones",
-    "EXPERIENCIA.PERIODO.FOTOLATINO" : "Junio 2016 - Abril 2017'",
+    "EXPERIENCIA.PERIODO.FOTOLATINO" : "Junio 2016 - Abril 2017",
     "EXPERIENCIA.BREVE.FOTOLATINO" : "Desarrollo de la página web de Foto Latinos Producciones, buscando una plataforma visual atractiva y funcional que refleje su identidad única. Incorporamos tecnologías avanzadas para un rendimiento óptimo en línea y una experiencia de usuario intuitiva.",
     "EXPERIENCIA.TAREAS.FOTOLATINO" : [
             "Mantenimiento de la página web.",
@@ -139,11 +139,11 @@
 
         "ESTUDIOS.ENTIDAD.UPN" : "Universidad Privada del Norte",
 
-        "ESTUDIOS.MAESTRIA.TITULO" : "Maestria en Ingenieria de Sistemas",
+        "ESTUDIOS.MAESTRIA.TITULO" : "Maestría en Ingeniería de Sistemas",
         "ESTUDIOS.MAESTRIA.PERIODO" : "Actualidad",
         "ESTUDIOS.MAESTRIA.SKILLS" : [
-            "Gestion de Procesos y Calidad",
-            "Especializacion en sistema de gestion de seguridad de la informacion"
+            "Gestión de Procesos y Calidad",
+            "Especialización en sistema de gestión de seguridad de la información"
         ],
    
         "ESTUDIOS.DIPLOMADO.TITULO" : "Diplomado en Procesos y Mejora Continua con Mención en Transformación Digital Empresarial",
@@ -156,7 +156,7 @@
             "Tecnologías para la gestión de operaciones"
         ],
    
-        "ESTUDIOS.BACHILLER.TITULO" : "Bachiller en Ingenieria de Sistemas",
+        "ESTUDIOS.BACHILLER.TITULO" : "Bachiller en Ingeniería de Sistemas",
         "ESTUDIOS.BACHILLER.PERIODO" : "Mar 2016 - Jul 2021",
         "ESTUDIOS.BACHILLER.SKILLS" : [
             "Conocimiento en lenguajes de programación C++",

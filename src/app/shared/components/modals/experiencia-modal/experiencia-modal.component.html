@@ -29,9 +29,9 @@
                         >{{ infoExperiencia.periodo | translate }}</span
                     >
                 </div>
-                <p class="text-md text-ternary-500">
-                    {{ infoExperiencia.entidad | translate }}
-                </p>
+                <p
+                    class="text-md text-ternary-500"
+                    [innerHTML]="infoExperiencia.entidad | translate"></p>
                 <span
                     class="w-1/4 lg:hidden text-xs bg-primary-400 text-white rounded-full px-2 py-1"
                     >{{ infoExperiencia.periodo | translate }}</span

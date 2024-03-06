@@ -24,7 +24,7 @@
     "QUIENSOY.HOLA" : "Hi 👋, I'm",
     "QUIENSOY.DEVELOPER1" : "FullStack",
     "QUIENSOY.DEVELOPER2" : "Developer",
-    "QUIENSOY.DESCRIPCION" : "You can also call me <strong> Wayless </strong> 😏 </br> I have more than 3 years developing web applications for different government entities, e-commerce, among others.",
+    "QUIENSOY.DESCRIPCION" : "You can also call me <strong> Wayless </strong> 😌 </br> I have more than 3 years developing web applications for different government entities, e-commerce, among others.",
     "QUIENSOY.PORTAFOLIO" : "Portfolio",
 
     "DESCRIPCION.ACERCADEMI" : "About me",
@@ -42,8 +42,8 @@
     "PROYECTOS.CORTA.EVANOZ": "Web developer with experience in e-Commerce, APIs, optimization and SCRUM methodology.",
     "PROYECTOS.DESCRIPCION.EVANOZ" : "I have excelled in the development of web projects, specializing in e-Commerce and blogs. My experience includes the creation of APIs using Node, as well as the implementation of administrative panels and stores using Angular or React. I have carried out the configuration of droplets with Ubuntu and the deployment of projects on VPS servers to achieve efficient production. In addition, I have demonstrated skills in code optimization, web page layout and payment gateway integration using API's such as Culqi and PayPal. All my projects have been managed under the agile SCRUM methodology, ensuring a collaborative and efficient approach to development.",
 
-    "PROYECTOS.CORTA.TUTATI" : "Development and optimization of functionalities in logistics system 'Tutati' under SCRUM methodology.",
-    "PROYECTOS.DESCRIPCION.TUTATI" : "I actively participated in improving the logistics system 'Tutati', analyzing processes and automating functions. I focused on the development of new functionalities and modules for delivery, warehouse and distribution tracking. In addition, I was in charge of modifying and optimizing the code, as well as maintaining the database.",
+    "PROYECTOS.CORTA.TUTATI" : "Development and optimization of functionalities in logistics system &quot;Tutati&quot;  under SCRUM methodology.",
+    "PROYECTOS.DESCRIPCION.TUTATI" : "I actively participated in improving the logistics system &quot;Tutati&quot;, analyzing processes and automating functions. I focused on the development of new functionalities and modules for delivery, warehouse and distribution tracking. In addition, I was in charge of modifying and optimizing the code, as well as maintaining the database.",
 
     "PROYECTOS.CORTA.CUENTASCLARAS": "Create a highly efficient complete solution for accounting and back-office management.",
     "PROYECTOS.DESCRIPCION.CUENTASCLARAS": "I recently led an exciting full stack project focused on accounting and its intranet, employing technologies such as Angular, TypeScript, RxJS, Bootstrap, MySQL, Node.js and NestJS to deliver a complete solution. On the frontend, I used Angular with TypeScript to build a dynamic and attractive user interface, leveraging RxJS to handle asynchronous operations. The choice of Bootstrap ensured a consistent and responsive user experience. On the backend, I implemented microservices with Node.js and NestJS, allowing for a modular and scalable architecture. MySQL was the database of choice, ensuring the integrity of the accounting data. The implementation of microservices not only facilitated accounting, but also allowed the creation of an internal intranet for efficient business management. The result is a robust and easy-to-maintain solution, tailored to the specific needs of the accounting sector.",
@@ -89,12 +89,12 @@
         "Projects developed using the agile SCRUM methodology."
     ],
 
-     "EXPERIENCIA.ENTIDAD.PLATANITOS" : "Commercial Mont SAC 'Platanitos'",
+     "EXPERIENCIA.ENTIDAD.PLATANITOS" : "Commercial Mont SAC &quot;Platanitos&quot;",
      "EXPERIENCIA.PERIODO.PLATANITOS" : "October 2021 - January 2022",
      "EXPERIENCIA.BREVE.PLATANITOS" : "During the development of the Tutati system, our focus is on managing Human Resources (HR) and logistical processes. We've created a platform that optimizes personnel management and enhances logistical efficiency, providing a comprehensive solution for business needs.",
      "EXPERIENCIA.TAREAS.PLATANITOS" : [
-        "Analysis of logistical processes for the creation of features and automation of the 'Tutati' system.",
-        "Development of new features in the 'Tutati' logistics management system.",
+        "Analysis of logistical processes for the creation of features and automation of the &quot;Tutati&quot; system.",
+        "Development of new features in the &quot;Tutati&quot; logistics management system.",
         "Development of modules for delivery tracking.",
         "Development of modules for warehouse process tracking.",
         "Development of modules for distribution tracking.",
