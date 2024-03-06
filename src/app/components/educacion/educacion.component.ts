@@ -34,16 +34,14 @@ export class EducacionComponent {
     }
 
     private recorrerTraduccion(): void {
+        this.arrayTranslate = [];
         this.estudios.forEach(element => {
             this.translateArrays(element.skills);
         });
-
-        console.log(typeof this.arrayTranslate);
     }
 
     private translateArrays(translateArray: string): void {
         this.arraySkills = this.translatePipeService.transform(translateArray);
-
         this.arrayTranslate.push(this.arraySkills);
     }
 }
