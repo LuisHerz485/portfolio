@@ -1,6 +1,7 @@
 import {
     CUSTOM_ELEMENTS_SCHEMA,
     Component,
+    HostListener,
     Inject,
     inject,
 } from '@angular/core';
@@ -36,5 +37,10 @@ export class ProyectoModalComponent {
 
     public closeModal(): void {
         this.dlgRef.close(false);
+    }
+
+    @HostListener('document:keydown.escape', ['$event'])
+    onKeydownHandler(event: KeyboardEvent) {
+        this.dlgRef.close();
     }
 }

@@ -1,5 +1,5 @@
 import { DialogRef } from '@angular/cdk/dialog';
-import { Component, Inject, inject } from '@angular/core';
+import { Component, HostListener, Inject, inject } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 import { experiencia } from '@/app/shared/data';
@@ -27,7 +27,7 @@ export class ExperienciaModalComponent {
     public experiencia = experiencia;
     public arrayTareas: string[] | string | undefined;
 
-    private dialogRef = inject(DialogRef);
+    private dlgRef = inject(DialogRef);
     private translatePipeService = inject(TranslatePipe);
     public nightModeService = inject(NightModeService);
 
@@ -38,10 +38,15 @@ export class ExperienciaModalComponent {
     }
 
     public closeModal() {
-        this.dialogRef.close(false);
+        this.dlgRef.close(false);
     }
 
     public translateArrays(translateArray: string): void {
         this.arrayTareas = this.translatePipeService.transform(translateArray);
+    }
+
+    @HostListener('document:keydown.escape', ['$event'])
+    onKeydownHandler(event: KeyboardEvent) {
+        this.dlgRef.close();
     }
 }
