@@ -29,9 +29,9 @@
                             >{{ experiencia.periodo | translate }}</time
                         >
                     </div>
-                    <div class="text-ternary-500 mb-1">
-                        {{ experiencia.entidad | translate }}
-                    </div>
+                    <div
+                        class="text-ternary-500 mb-1"
+                        [innerHTML]="experiencia.entidad | translate"></div>
                     <div class="text-slate-500">
                         {{ experiencia.descripcionBreve | translate }}
                     </div>
