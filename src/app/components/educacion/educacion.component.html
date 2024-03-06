@@ -29,7 +29,10 @@
                 </h5>
                 <hr />
                 <ul class="font-normal list-disc list-inside text-sm">
-                    @for (skill of arraySkills; track $index) {
+                    @for (
+                        skill of arrayTranslate[$index];
+                        track skill.indexOf
+                    ) {
                         <li>{{ skill }}</li>
                     }
                 </ul>

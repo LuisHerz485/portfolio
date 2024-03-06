@@ -3,5 +3,5 @@ export interface IEstudio {
     institucion: string;
     carrera: string;
     periodo: string;
-    skills: string[];
+    skills: string;
 }

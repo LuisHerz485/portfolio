@@ -5,6 +5,7 @@ import * as enumKeys from '@/app/shared/enums';
 import { LanguageService } from '@/app/shared/services/language.service';
 import { NightModeService } from '@/app/shared/services/night-mode.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
+import { IEstudio } from '@/app/shared/interfaces';
 
 @Component({
     selector: 'app-educacion',
@@ -15,9 +16,10 @@ import { AsyncPipe, CommonModule } from '@angular/common';
     styleUrl: './educacion.component.scss',
 })
 export class EducacionComponent {
-    public estudios = estudios;
+    public estudios: IEstudio[] = estudios;
     public enumKeys: typeof enumKeys = enumKeys;
     public arraySkills: string[] | undefined | string;
+    public arrayTranslate: any[] = [];
 
     private translatePipeService = inject(TranslatePipe);
     private lenguajeService = inject(LanguageService);
@@ -33,11 +35,15 @@ export class EducacionComponent {
 
     private recorrerTraduccion(): void {
         this.estudios.forEach(element => {
-            this.translateArrays(element.skills[0]);
+            this.translateArrays(element.skills);
         });
+
+        console.log(typeof this.arrayTranslate);
     }
 
     private translateArrays(translateArray: string): void {
         this.arraySkills = this.translatePipeService.transform(translateArray);
+
+        this.arrayTranslate.push(this.arraySkills);
     }
 }
