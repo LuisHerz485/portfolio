@@ -53,7 +53,7 @@ export class ContentComponent {
 
     @HostListener('window:blur', ['$event'])
     handleBlur(event: FocusEvent): void {
-        this.titleService.setTitle('Regresa, te extraño 😭');
+        this.titleService.setTitle('¿Ya te vas? Regresa 🥺');
     }
 
     @HostListener('window:focus', ['$event'])

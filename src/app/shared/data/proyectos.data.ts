@@ -110,7 +110,7 @@ export const proyectos: IProyecto[] = [
     },
     {
         id: 6,
-        titulo: 'Wayless Portfolio',
+        titulo: enumKeys.proyectosKeyTranslate.TITULOWAYLESS,
         entidad: 'Free Lance',
         descripcion: enumKeys.proyectosKeyTranslate.DESCRIPCIONWAYLESS,
         descripcionCorta: enumKeys.proyectosKeyTranslate.CORTAWAYLESS,

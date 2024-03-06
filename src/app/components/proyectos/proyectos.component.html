@@ -23,7 +23,9 @@
                             width="700"
                             height="413"
                             [alt]="proyecto.titulo" />
-                        <h4 class="font-semibold">{{ proyecto.titulo }}</h4>
+                        <h4 class="font-semibold">
+                            {{ proyecto.titulo | translate }}
+                        </h4>
                         <h5
                             class="text-xs font-semibold text-secondary-500 mb-2">
                             {{ proyecto.entidad | translate }}

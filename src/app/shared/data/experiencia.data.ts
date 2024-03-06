@@ -111,7 +111,7 @@ export const experiencia: IExperiencia[] = [
     {
         id: 6,
         entidad: enumKeys.experienciaKeyTranslate.ENTIDADFOTOLATINO,
-        logoEntidad: 'assets/img/experiencias/logos/fotolatino.jpeg',
+        logoEntidad: 'assets/img/experiencias/logos/fotolatino.png',
         periodo: enumKeys.experienciaKeyTranslate.PERIODOFOTOLATINO,
         puesto: enumKeys.genericosKeyTranslate.FULLSTACK,
         descripcionBreve: enumKeys.experienciaKeyTranslate.BREVEFOTOLATINO,

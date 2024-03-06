@@ -51,6 +51,7 @@
     "PROYECTOS.CORTA.CRYPTO": "Create cryptocurrency voting interface: intuitive design, dynamic and secure experience.",
     "PROYECTOS.DESCRIPCION.CRYPTO" : "I led frontend development for an exciting cryptocurrency voting platform, using HTML, Tailwind, Angular and TypeScript. I designed an intuitive interface with HTML, leveraged the flexibility of Tailwind for efficient styling, and employed the power of Angular and TypeScript to create a dynamic and secure user experience. The combination of these technologies allowed for an efficient and attractive voting interface, tailored to the specific needs of the cryptocurrency world.",
 
+    "PROYECTOS.TITULO.WAYLESS": "Wayless Portfolio",
     "PROYECTOS.CORTA.WAYLESS": "I built my portfolio with a dynamic design, highlighting skills and projects.",
     "PROYECTOS.DESCRIPCION.WAYLESS" : "I developed my portfolio using Angular, Tailwind CSS and TypeScript. Angular provided a modular architecture, Tailwind CSS allowed for a stylish and efficient design, while TypeScript ensured robust code. This project resulted in a portfolio with a dynamic and attractive user interface, backed by robust and efficient code. This comprehensive approach ensured a professional presentation of my skills and projects, providing an exceptional user experience and a solid foundation for future updates.",
 
@@ -64,7 +65,7 @@
     "EXPERIENCIA.ENTIDAD.INDECI" : "National Institute of Civil Defense",
     "EXPERIENCIA.PERIODO.INDECI": "August 2022 - Present",
 
-    "EXPERIENCIA.BREVE.INDECI": "Development of the Ministry of Defense system: SINPAD v3 for management of natural disasters and national emergencies.",
+    "EXPERIENCIA.BREVE.INDECI": "My involvement in the development of the SINPAD v3 system for the Ministry of Defense was crucial for managing national disasters and emergencies. I contributed expertise to ensure a prompt and effective response, thereby consolidating an essential component in national security.",
     "EXPERIENCIA.TAREAS.INDECI": [
         "Process analysis using BPMN for optimization and development of features in SINPAD 3.0",
         "Responsible for continuous review of new coding in frontend and backend environments for SINPAD 3.0's new features",
@@ -105,7 +106,7 @@
 
      "EXPERIENCIA.ENTIDAD.FC" : "FC Accountants & Associates",
      "EXPERIENCIA.PERIODO.FC" : "February 2021 - July 2022",
-     "EXPERIENCIA.BREVE.FC" : "As the leader of the systems department, I excel in developing and maintaining websites (FyF Auditors and FC Accountants), creating attendance systems, intranets for both administrative and client use, and successfully implementing Google Drive and SUNAT APIs.",
+     "EXPERIENCIA.BREVE.FC" : "I led the development and maintenance of websites for FyF Auditors and FC Accountants, as well as the creation of attendance systems and intranet. Additionally, I successfully implemented APIs from Google Drive and SUNAT, applying my expertise in each phase of the project.",
      "EXPERIENCIA.TAREAS.FC" : [
         "Responsible and leader of the systems department.",
         "Development and maintenance of websites (FyF Auditors and FC Accountants).",
@@ -115,7 +116,7 @@
     ],
 
      "EXPERIENCIA.PERIODO.ALIGNET" : "February 2018 - July 2018",
-     "EXPERIENCIA.BREVE.ALIGNET" : "Development of e-commerce websites, focused on creating efficient and secure platforms that enhance user experience with attractive designs and customized solutions. We use advanced technologies for optimal online performance.",
+     "EXPERIENCIA.BREVE.ALIGNET" : "I developed e-commerce websites with an efficient and secure approach, enhancing the user experience through attractive designs and personalized solutions. Additionally, I implemented advanced technologies to ensure optimal online performance throughout the project.",
      "EXPERIENCIA.TAREAS.ALIGNET" : [
         "Deployment of projects to production environments",
         "Configuration of software for production deployment",
@@ -125,7 +126,7 @@
 
      "EXPERIENCIA.ENTIDAD.FOTOLATINO" : "Photo Latino Productions",
      "EXPERIENCIA.PERIODO.FOTOLATINO" : "June 2016 - April 2017",
-     "EXPERIENCIA.BREVE.FOTOLATINO" : "Development of the Foto Latinos Producciones website, aiming for an visually appealing and functional platform that reflects its unique identity. We incorporate advanced technologies for optimal online performance and an intuitive user experience.",
+     "EXPERIENCIA.BREVE.FOTOLATINO" : "In my involvement with Foto Latinos Producciones, I built the website aiming to provide a visually appealing and functional platform that captured its distinctive identity. I integrated advanced technologies to ensure optimal online performance and an intuitive user experience, collaborating closely with the team to achieve these goals.",
      "EXPERIENCIA.TAREAS.FOTOLATINO" : [
         "Website maintenance.",
         "Installation, configuration, administration, and maintenance of computer equipment.",
