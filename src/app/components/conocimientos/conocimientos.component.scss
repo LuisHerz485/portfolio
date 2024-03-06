@@ -1,24 +1,23 @@
 @import '../../shared/styles/tooltip.scss';
 @import '../../shared/styles/animations.scss';
 
-#panel{
-    view-timeline-name : --panel;
+$animation-entry: entry;
+$animation-cover: cover;
+$selector-panel: --panel;
+
+#panel, #container-panel {
+    view-timeline-name: $selector-panel;
     view-timeline-axis: block;
-
-    animation-timeline: --panel;
-    animation-name: showWithScale;
-
-    animation-range: entry 1% cover 40%;
+    animation-timeline: $selector-panel;
     animation-fill-mode: both;
 }
 
-#container-panel{
-    view-timeline-name : --panel;
-    view-timeline-axis: block;
+#panel {
+    animation-name: showWithScale;
+    animation-range: $animation-entry 1% $animation-cover 40%;
+}
 
-    animation-timeline: --panel;
-    animation-name: show;
-
-    animation-range: entry 15% cover 30%;
-    animation-fill-mode: both;
+#container-panel {
+    animation-name: showWithScale;
+    animation-range: $animation-entry 15% $animation-cover 30%;
 }
