@@ -39,7 +39,7 @@
 
                 <ul
                     [ngClass]="{ 'filter invert': nightMode$ | async }"
-                    class="text-md list-disc list-inside mt-4 ml-1">
+                    class="text-sm list-disc list-inside mt-4 ml-1">
                     @for (tareas of arrayTareas; track $index) {
                         <li class="my-1">
                             {{ tareas }}
@@ -54,10 +54,10 @@
                     <img
                         [src]="infoExperiencia.logoEntidad"
                         alt=""
-                        class="max-w-44 lg:max-w-56" />
+                        class="w-36" />
                 } @else {
                     <div
-                        class="text-[10rem] text-white rounded-full bg-sky-700 py-10 px-28">
+                        class="text-[9rem] text-white rounded-full bg-sky-700 py-8 px-24">
                         {{ infoExperiencia.entidad.charAt(0) }}
                     </div>
                 }

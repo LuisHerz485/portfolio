@@ -1,5 +1,5 @@
 <section
-    class="min-h-96 bg-background-primary flex justify-center mb-20 md:mb-52 lg:mb-64">
+    class="min-h-80 md:min-h-96 bg-background-primary flex justify-center mb-32 md:mb-52 lg:mb-64">
     <div
         class="absolute left-0 right-0 xl:mx-44 2xl:mx-64 md:mb-48 lg:pl-20 pt-8 text-white p-12"
         id="container-panel">
@@ -9,20 +9,21 @@
         <p class="text-center text-ternary-500">
             {{ enumKeys.conocimientosKeyTranslate.SUBTITULO | translate }}
         </p>
-        <div class="flex justify-center">
+        <div class="flex justify-evenly">
             @for (conocimiento of conocimientos; track $index) {
                 <div
-                    class="tooltip filter grayscale contrast-200 hover:filter-none cursor-pointer">
+                    class="flex items-center justify-center tooltip filter grayscale contrast-200 hover:filter-none cursor-pointer">
                     <img
                         [src]="conocimiento?.icono"
                         [alt]="conocimiento?.titulo"
-                        class="ml-3 mr-3 max-h-24" />
+                        class="max-h-16 md:max-h-24" />
                     <span class="tooltiptext text-xs">{{
                         conocimiento?.titulo
                     }}</span>
                 </div>
             }
         </div>
+
         <div class="relative top-10 mb-96" id="experiencias">
             <div
                 class="left-0 right-0 bg-primary-400 rounded-lg sm:p-14 md:p-20 p-4">
