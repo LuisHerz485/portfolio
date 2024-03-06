@@ -3,10 +3,9 @@ export const mensajeWsp: string =
     'Hola Luis 👋, Vengo desde tu portafolio y deseo contactarme contigo 😎';
 
 export const panelClassResponsiveModal: string[] = [
-    'max-h-[100vw]',
-    'sm:max-h-[20vw]',
-    'md:max-h-[80vw]',
-    'lg:max-h-[50vw]',
-    'xl:max-h-[50vw]',
-    'min-w-[80%]',
+    'max-h-[90vh]',
+    'sm:max-h-[40vh]',
+    'md:max-h-[80vh]',
+    'lg:max-h-[80vh]',
+    'xl:max-h-[80vh]',
 ];

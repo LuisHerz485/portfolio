@@ -9,6 +9,7 @@ import { TranslatePipe } from '@/app/shared/pipes';
 import { NightModeService } from '@/app/shared/services/night-mode.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { IExperiencia } from '@/app/shared/interfaces';
+import { panelClassResponsiveModal } from '@/app/shared/constants';
 
 @Component({
     selector: 'app-timeline-trabajos',
@@ -31,13 +32,7 @@ export class TimelineTrabajosComponent {
     public openModalExperiencia(experiencia: IExperiencia): void {
         this.dlgRef.open(ExperienciaModalComponent, {
             disableClose: true,
-            panelClass: [
-                'max-h-[120vw]',
-                'sm:max-h-[40vw]',
-                'md:max-h-[80vw]',
-                'lg:max-h-[50vw]',
-                'xl:max-h-[50vw]',
-            ],
+            panelClass: [...panelClassResponsiveModal],
             data: experiencia,
         });
     }
