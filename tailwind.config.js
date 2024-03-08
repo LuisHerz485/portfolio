@@ -21,8 +21,8 @@ module.exports = {
         'ternary-500': '#959CB1',
         'background-primary' : '#090E34',
         'back-transparent' : 'rgb(255 255 255/.57)',
-        'back-black-transparent' : 'rgb(15 23 42/ .13',
-        'back-black-menu' : 'rgb(0,0,0/ .9'
+        'back-black-transparent' : 'rgb(15 23 42 /.13)',
+        'back-black-menu' : 'rgb(0 0 0/.9)'
       },
     },
   },
