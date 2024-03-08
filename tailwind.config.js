@@ -22,7 +22,7 @@ module.exports = {
         'background-primary' : '#090E34',
         'white-transparent': 'rgba(255, 255, 255, 0.57)',
         'black-transparent': 'rgba(15, 23, 42, 0.13)',
-        'black-menu': 'rgba(0, 0, 0, 0.9)',
+        'black-menu': 'rgba(0, 0, 0, 0.90)',
       },
     },
   },
