@@ -1,11 +1,11 @@
 <nav
     [ngClass]="{
         'justify-center': openMenu,
-        'justify-between bg-back-transparent': !openMenu
+        'justify-between bg-white-transparent': !openMenu
     }"
     [ngClass]="{
-        'bg-back-transparent': isDarkMode === false,
-        'bg-back-black-transparent': isDarkMode === true
+        'bg-white-transparent': isDarkMode === false,
+        'bg-black-transparent': isDarkMode === true
     }"
     class="flex justify-between backdrop-blur-md items-center md:justify-between p-8 md:px-28 xl:px-64 border-0 border-b-[1px] border-ternary">
     <a
