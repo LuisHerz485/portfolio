@@ -20,9 +20,9 @@ module.exports = {
         'secondary-500' : '#090E34',
         'ternary-500': '#959CB1',
         'background-primary' : '#090E34',
-        'back-transparent' : 'rgb(255 255 255/.57)',
-        'back-black-transparent' : 'rgb(15 23 42/ .13',
-        'back-black-menu' : 'rgb(0,0,0/ .9'
+        'white-transparent': 'rgba(255, 255, 255, 0.57)',
+        'black-transparent': 'rgba(15, 23, 42, 0.13)',
+        'black-menu': 'rgba(0, 0, 0, 0.9)',
       },
     },
   },
