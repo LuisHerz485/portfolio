@@ -18,3 +18,16 @@ $leftAnimation: --leftAnimation;
         animation-name: leftToRight;
     }
 }
+
+
+@media (max-width  : 1024px) {
+    .syncLeftRight { 
+        &:nth-child(odd) {
+            animation-name: rightToLeftMobile;
+        }
+    
+        &:nth-child(even) {
+            animation-name: leftToRightMobile;
+        }
+    }  
+}

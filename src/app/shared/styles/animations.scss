@@ -1,11 +1,11 @@
 @keyframes leftToRight {
-    from{
+    from {
         transform: translateX(-75%) scale(0);
         opacity: 0;
     }
 
-    to{
-        transform: translate(0) scale(1);
+    to {
+        transform: translateX(0) scale(1);
         opacity: 1;
     }
 }
@@ -17,11 +17,34 @@
     }
 
     to {
-        transform: translate(0) scale(1);
+        transform: translateX(0) scale(1);
         opacity: 1;
     }
 }
 
+@keyframes leftToRightMobile {
+    from {
+        transform: translateX(-45%) scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rightToLeftMobile {
+    from {
+        transform: translateX(45%) scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
 
 @keyframes show {
     from {

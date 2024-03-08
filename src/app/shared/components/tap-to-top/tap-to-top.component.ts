@@ -13,7 +13,7 @@ export class TapToTopComponent {
     public showButton: boolean = false;
 
     public tap2TopService = inject(TapToTopService);
-    private navigateService = inject(NavigationService);
+    public navigateService = inject(NavigationService);
     public openMenu$ = this.navigateService.myBoolean$;
 
     @HostListener('window:scroll', [])
