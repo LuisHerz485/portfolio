@@ -1,12 +1,12 @@
 # Portfolio: Wayless (Luis Hernandez)
 
 - [Portfolio: Wayless (Luis Hernandez)](#portfolio-wayless-luis-hernandez) 
-    -[Introduccion](#introduccion) 
-    -[Requerimientos](#requerimientos) 
-    -[Librerias Utilizadas](#librerias-utilizadas) 
-    -[Configuracion](#configuracion) 
-    -[Ejecucion](#ejecución) 
-    -[Preview](#preview) 
+    -[Introduccion](#introduccion)  
+    -[Requerimientos](#requerimientos)  
+    -[Librerias Utilizadas](#librerias-utilizadas)  
+    -[Configuracion](#configuracion)  
+    -[Ejecucion](#ejecución)  
+    -[Preview](#preview)  
 
 ## Introduccion
 Proyecto desarrollado por Luis Hernandez aka Wayless. Es un portafolio desarrollado con angular acerca de informacion basica acerca de proyectos, y vida laboral del creador.
