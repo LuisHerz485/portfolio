@@ -1,5 +1,7 @@
 @if (showButton) {
-    <div class="fixed bottom-4 right-4 z-50 m-4">
+    <div
+        [ngClass]="{ '-z-50': openMenu$ | async }"
+        class="fixed bottom-4 right-4 z-50 m-4">
         <a
             (click)="tap2TopService.scrollToDiv('inicio')"
             type="button"
