@@ -1,46 +1,73 @@
+$fullOpacity :1;
+$noneOpacity : 0;
+$noneScale : 0;
+
 @keyframes leftToRight {
-    from{
-        transform: translateX(-75%) scale(0);
-        opacity: 0;
+    from {
+        transform: translateX(-75%) scale($noneScale);
+        opacity: $noneOpacity;
     }
 
-    to{
-        transform: translate(0) scale(1);
-        opacity: 1;
+    to {
+        transform: translateX(0) scale(1);
+        opacity: $fullOpacity;
     }
 }
 
 @keyframes rightToLeft {
     from {
-        transform: translateX(75%) scale(0);
-        opacity: 0;
+        transform: translateX(75%) scale($noneScale);
+        opacity: $noneOpacity;
     }
 
     to {
-        transform: translate(0) scale(1);
-        opacity: 1;
+        transform: translateX(0) scale(1);
+        opacity: $fullOpacity;
     }
 }
 
+@keyframes leftToRightMobile {
+    from {
+        transform: translateX(-45%) scale($noneScale);
+        opacity: $noneOpacity;
+    }
+
+    to {
+        transform: translateX(0) scale(1);
+        opacity: $fullOpacity;
+    }
+}
+
+@keyframes rightToLeftMobile {
+    from {
+        transform: translateX(45%) scale($noneScale);
+        opacity: $noneOpacity;
+    }
+
+    to {
+        transform: translateX(0) scale(1);
+        opacity: $fullOpacity;
+    }
+}
 
 @keyframes show {
     from {
-        opacity: 0;
+        opacity: $noneOpacity;
     }
 
     to{
-        opacity: 1;
+        opacity: $fullOpacity;
     }
 }
 
 @keyframes showWithScale {
     from {
-        opacity: 0;
+        opacity: $noneOpacity;
         scale: 25%;
     }
 
     to{
-        opacity: 1;
+        opacity: $fullOpacity;
         scale: 100%
     }
     
