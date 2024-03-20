@@ -41,9 +41,7 @@
                     [ngClass]="{ 'filter invert': nightMode$ | async }"
                     class="text-sm list-disc list-inside mt-4 ml-1">
                     @for (tareas of arrayTareas; track $index) {
-                        <li class="my-1">
-                            {{ tareas }}
-                        </li>
+                        <li class="my-1" [innerHTML]="tareas"></li>
                     }
                 </ul>
             </div>
