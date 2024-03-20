@@ -1,9 +1,9 @@
 {
-    "GENERICOS.COMPETENCIA.TECNICA" : "Technical Skills",
-    "GENERICOS.PROYECTOS" : "Project",
-    "GENERICOS.VERMAS" : "View More",
-    "GENERICOS.INFORMACION" : "Information",
-    "GENERICOS.BASICOS" : "Basics",
+    "GENERICOS.COMPETENCIA.TECNICA": "Technical Skills",
+    "GENERICOS.PROYECTOS": "Project",
+    "GENERICOS.VERMAS": "View More",
+    "GENERICOS.INFORMACION": "Information",
+    "GENERICOS.BASICOS": "Basics",
     "GENERICOS.LENGUAJES": "Languages",
     "GENERICOS.HERRAMIENTAS": "Tools",
     "GENERICOS.BD": "Data base",
@@ -13,160 +13,159 @@
     "GENERICOS.FULLSTACK": "FullStack Developer",
     "GENERICOS.FRONTEND": "FrontEnd Developer",
     "GENERICOS.BACKEND": "BackEnd Developer",
-    
-    "HEADER.INICIO" : "Home",
-    "HEADER.ACERCADEMI" : "About me",
-    "HEADER.PROYECTOS" : "Projects",
-    "HEADER.CONOCIMIENTOS" : "Expertise",
-    "HEADER.EXPERIENCIAS" : "Work Experience",
-    "HEADER.EDUCACION" : "Education",
 
-    "QUIENSOY.HOLA" : "Hi 👋, I'm",
-    "QUIENSOY.DEVELOPER1" : "FullStack",
-    "QUIENSOY.DEVELOPER2" : "Developer",
-    "QUIENSOY.DESCRIPCION" : "You can also call me <strong> Wayless </strong> 😌 </br> I have more than 3 years developing web applications for different government entities, e-commerce, among others.",
-    "QUIENSOY.PORTAFOLIO" : "Portfolio",
+    "HEADER.INICIO": "Home",
+    "HEADER.ACERCADEMI": "About me",
+    "HEADER.PROYECTOS": "Projects",
+    "HEADER.CONOCIMIENTOS": "Expertise",
+    "HEADER.EXPERIENCIAS": "Work Experience",
+    "HEADER.EDUCACION": "Education",
 
-    "DESCRIPCION.ACERCADEMI" : "About me",
-    "DESCRIPCION.TITULO" : "Dynamism and Productivity are what represent me",
-    "DESCRIPCION.CUERPO" : "I have a Bachelor's Degree in Computer Systems Engineering, with specialization in Continuous Improvement, Process Management and Quality. Currently, I am pursuing a Master's Degree in Systems Engineering with a specialization in Information Systems Management.",
+    "QUIENSOY.HOLA": "Hi 👋, I'm",
+    "QUIENSOY.DEVELOPER1": "FullStack",
+    "QUIENSOY.DEVELOPER2": "Developer",
+    "QUIENSOY.DESCRIPCION": "You can also call me <strong> Wayless </strong> 😌 </br> I have more than 4 years developing web applications for different government entities, e-commerce, among others.",
+    "QUIENSOY.PORTAFOLIO": "Portfolio",
 
-    "PROYECTOS.TITULO" : "Looking for something? 🤨",
-    "PROYECTOS.SUBTITULO" : "Here are a few projects, but...🤫",
-    "PROYECTOS.TITULO.MODAL" : "Information",
+    "DESCRIPCION.ACERCADEMI": "About me",
+    "DESCRIPCION.TITULO": "Dynamism and Productivity are what represent me",
+    "DESCRIPCION.CUERPO": "I have a Bachelor's Degree in Computer Systems Engineering, with specialization in Continuous Improvement, Process Management and Quality. Currently, I am pursuing a Master's Degree in Systems Engineering with a specialization in Information Systems Management.",
 
-    "PROYECTOS.ENTIDAD.INDECI":"National Institute of Civil Defense",
-    "PROYECTOS.CORTA.SINPAD" : "Government project for natural disaster management",
-    "PROYECTOS.DESCRIPCION.SINPAD" : "I played a key role in the SINPAD 3.0 development team, using the agile SCRUM methodology. My role included process analysis using BPMN, leading the frontend development team and participating in the constant review of new coding to improve both the frontend and backend. In addition, I took responsibility for creating essential system development documentation, establishing the main structure of the frontend and developing modules for SINPAD 3.0, VISOR GRD and SISCOE. From source code maintenance to bug fixing, deployment for testing and production, all these tasks addressed both Front End and Back End, using technologies such as Angular, RxJs, Oracle, PostGres, Java, among others.",
+    "PROYECTOS.TITULO": "Looking for something? 🤨",
+    "PROYECTOS.SUBTITULO": "Here are a few projects, but...🤫",
+    "PROYECTOS.TITULO.MODAL": "Information",
+
+    "PROYECTOS.ENTIDAD.INDECI": "National Institute of Civil Defense",
+    "PROYECTOS.CORTA.SINPAD": "Government project for natural disaster management",
+    "PROYECTOS.DESCRIPCION.SINPAD": "I played a key role in the SINPAD 3.0 development team, using the agile SCRUM methodology. My role included process analysis using BPMN, leading the frontend development team and participating in the constant review of new coding to improve both the frontend and backend. In addition, I took responsibility for creating essential system development documentation, establishing the main structure of the frontend and developing modules for SINPAD 3.0, VISOR GRD and SISCOE. From source code maintenance to bug fixing, deployment for testing and production, all these tasks addressed both Front End and Back End, using technologies such as Angular, RxJs, Oracle, PostGres, Java, among others.",
 
     "PROYECTOS.CORTA.EVANOZ": "Web developer with experience in e-Commerce, APIs, optimization and SCRUM methodology.",
-    "PROYECTOS.DESCRIPCION.EVANOZ" : "I have excelled in the development of web projects, specializing in e-Commerce and blogs. My experience includes the creation of APIs using Node, as well as the implementation of administrative panels and stores using Angular or React. I have carried out the configuration of droplets with Ubuntu and the deployment of projects on VPS servers to achieve efficient production. In addition, I have demonstrated skills in code optimization, web page layout and payment gateway integration using API's such as Culqi and PayPal. All my projects have been managed under the agile SCRUM methodology, ensuring a collaborative and efficient approach to development.",
+    "PROYECTOS.DESCRIPCION.EVANOZ": "I have excelled in the development of web projects, specializing in e-Commerce and blogs. My experience includes the creation of APIs using Node, as well as the implementation of administrative panels and stores using Angular or React. I have carried out the configuration of droplets with Ubuntu and the deployment of projects on VPS servers to achieve efficient production. In addition, I have demonstrated skills in code optimization, web page layout and payment gateway integration using API's such as Culqi and PayPal. All my projects have been managed under the agile SCRUM methodology, ensuring a collaborative and efficient approach to development.",
 
-    "PROYECTOS.CORTA.TUTATI" : "Development and optimization of functionalities in logistics system &quot;Tutati&quot;  under SCRUM methodology.",
-    "PROYECTOS.DESCRIPCION.TUTATI" : "I actively participated in improving the logistics system &quot;Tutati&quot;, analyzing processes and automating functions. I focused on the development of new functionalities and modules for delivery, warehouse and distribution tracking. In addition, I was in charge of modifying and optimizing the code, as well as maintaining the database.",
+    "PROYECTOS.CORTA.TUTATI": "Development and optimization of functionalities in logistics system &quot;Tutati&quot;  under SCRUM methodology.",
+    "PROYECTOS.DESCRIPCION.TUTATI": "I actively participated in improving the logistics system &quot;Tutati&quot;, analyzing processes and automating functions. I focused on the development of new functionalities and modules for delivery, warehouse and distribution tracking. In addition, I was in charge of modifying and optimizing the code, as well as maintaining the database.",
 
     "PROYECTOS.CORTA.CUENTASCLARAS": "Create a highly efficient complete solution for accounting and back-office management.",
     "PROYECTOS.DESCRIPCION.CUENTASCLARAS": "I recently led an exciting full stack project focused on accounting and its intranet, employing technologies such as Angular, TypeScript, RxJS, Bootstrap, MySQL, Node.js and NestJS to deliver a complete solution. On the frontend, I used Angular with TypeScript to build a dynamic and attractive user interface, leveraging RxJS to handle asynchronous operations. The choice of Bootstrap ensured a consistent and responsive user experience. On the backend, I implemented microservices with Node.js and NestJS, allowing for a modular and scalable architecture. MySQL was the database of choice, ensuring the integrity of the accounting data. The implementation of microservices not only facilitated accounting, but also allowed the creation of an internal intranet for efficient business management. The result is a robust and easy-to-maintain solution, tailored to the specific needs of the accounting sector.",
 
     "PROYECTOS.CORTA.CRYPTO": "Create cryptocurrency voting interface: intuitive design, dynamic and secure experience.",
-    "PROYECTOS.DESCRIPCION.CRYPTO" : "I led frontend development for an exciting cryptocurrency voting platform, using HTML, Tailwind, Angular and TypeScript. I designed an intuitive interface with HTML, leveraged the flexibility of Tailwind for efficient styling, and employed the power of Angular and TypeScript to create a dynamic and secure user experience. The combination of these technologies allowed for an efficient and attractive voting interface, tailored to the specific needs of the cryptocurrency world.",
+    "PROYECTOS.DESCRIPCION.CRYPTO": "I led frontend development for an exciting cryptocurrency voting platform, using HTML, Tailwind, Angular and TypeScript. I designed an intuitive interface with HTML, leveraged the flexibility of Tailwind for efficient styling, and employed the power of Angular and TypeScript to create a dynamic and secure user experience. The combination of these technologies allowed for an efficient and attractive voting interface, tailored to the specific needs of the cryptocurrency world.",
 
     "PROYECTOS.TITULO.WAYLESS": "Wayless Portfolio",
     "PROYECTOS.CORTA.WAYLESS": "I built my portfolio with a dynamic design, highlighting skills and projects.",
-    "PROYECTOS.DESCRIPCION.WAYLESS" : "I developed my portfolio using Angular, Tailwind CSS and TypeScript. Angular provided a modular architecture, Tailwind CSS allowed for a stylish and efficient design, while TypeScript ensured robust code. This project resulted in a portfolio with a dynamic and attractive user interface, backed by robust and efficient code. This comprehensive approach ensured a professional presentation of my skills and projects, providing an exceptional user experience and a solid foundation for future updates.",
+    "PROYECTOS.DESCRIPCION.WAYLESS": "I developed my portfolio using Angular, Tailwind CSS and TypeScript. Angular provided a modular architecture, Tailwind CSS allowed for a stylish and efficient design, while TypeScript ensured robust code. This project resulted in a portfolio with a dynamic and attractive user interface, backed by robust and efficient code. This comprehensive approach ensured a professional presentation of my skills and projects, providing an exceptional user experience and a solid foundation for future updates.",
 
-    "CONOCIMIENTOS.TITULO" : "Expertise",
-    "CONOCIMIENTOS.SUBTITULO" : "I have knowledge in other tools as well, such as",
-    "CONOCIMIENTOS.DESCRIPCION" : "I am at your disposal for any questions or proposals! Let's talk soon!",
+    "CONOCIMIENTOS.TITULO": "Expertise",
+    "CONOCIMIENTOS.SUBTITULO": "I have knowledge in other tools as well, such as",
+    "CONOCIMIENTOS.DESCRIPCION": "I am at your disposal for any questions or proposals! Let's talk soon!",
 
-    "EXPERIENCIA.TITULO1" : "Work",
-    "EXPERIENCIA.TITULO2" : "Experience",
+    "EXPERIENCIA.TITULO1": "Work",
+    "EXPERIENCIA.TITULO2": "Experience",
 
-    "EXPERIENCIA.ENTIDAD.INDECI" : "National Institute of Civil Defense",
-    "EXPERIENCIA.PERIODO.INDECI": "Aug 2022 - Present",
+    "EXPERIENCIA.ENTIDAD.INDECI": "National Institute of Civil Defense",
+    "EXPERIENCIA.PERIODO.INDECI": "Aug 2022 - Jan 2024",
 
     "EXPERIENCIA.BREVE.INDECI": "My involvement in the development of the SINPAD v3 system for the Ministry of Defense was crucial for managing national disasters and emergencies. I contributed expertise to ensure a prompt and effective response, thereby consolidating an essential component in national security.",
     "EXPERIENCIA.TAREAS.INDECI": [
-        "Process analysis using BPMN for optimization and development of features in SINPAD 3.0",
-        "Responsible for continuous review of new coding in frontend and backend environments for SINPAD 3.0's new features",
-        "Leading the front-end development team for optimal performance",
-        "Creation of essential documentation regarding the development of the SINPAD 3.0 system",
-        "Creation of the main structure for the frontend environment of the SINPAD 3.0 system",
-        "Development of modules for the new SINPAD 3.0 system: VISOR GRD, SISCOE",
-        "Maintenance of source codes for Front End and Back End of the new SINPAD 3.0 system: VISOR GRD, SISCOE",
-        "Deployment of the new Front End and Back End for the SINPAD 3.0 system: VISOR GRD, SISCOE for testing."
-     ],
-
-     "EXPERIENCIA.PERIODO.POLYSOFT" : "Oct 2021 - Jan 2022",
-     "EXPERIENCIA.BREVE.POLYSOFT" : "In my experience, I have worked on the development of web projects, focusing on creating sites for e-Commerce and blogs. Throughout this process, I have implemented and optimized various key functionalities to provide a comprehensive user experience.",
-     "EXPERIENCIA.TAREAS.POLYSOFT" : [
-        "Development of web projects for e-Commerce and blogs.",
-        "Creation of APIs (Node) and administrative panels and stores (Angular or React).",
-        "Implementation of payment gateways using APIs such as Culqi and PayPal.",
-        "Code optimization.",
-        "Configuration of droplets with Ubuntu.",
-        "Deployment of projects to production on VPS servers.",
-        "Web page layout.",
-        "Projects developed using the agile SCRUM methodology."
+        "I co-led the frontend team of the SINPAD system with the project manager, using SCRUM methodology approaches.",
+        "I conducted analysis of processes involved in the management of natural disasters and national emergencies from level 1 to level 5 for their optimization and digitalization.",
+        "I developed the main functionalities for managing national disasters and emergencies in the new SINPAD 3.0 system both on the Front End and the Back End.",
+        "I developed the geospatial reference point management tool between the SINPAD 3.0 system and the GRD VIEWER with PostGis, Oracle Spatial, GeoServer, ArcGIS, QGIS, Springboot, and Leaflet for deploying human and material resources for the various ministries involved in the project.",
+        "I automated the creation of essential documentation on the frontend with coding standards and comments using jsDoc and Compodoc.",
+        "I maintained, optimized, and refactored code created in previous versions of the SINPAD system.",
+        "I migrated the base system version of SINPAD from Angular 13 to version 14 to achieve better compatibility with essential plugins in project creation.",
+        "Technologies involved: Angular, RxJs, Angular Material, SASS, Oracle 19c, Oracle Spatial, PostGres, PostGIS, ArcGIS, QGIS, Java, Java SpringBoot 3, JWT, BootStrap. NPM, TypeScript, JavaScript, Git, GitLab, Swagger, BPMN, SCRUM."
     ],
 
-     "EXPERIENCIA.ENTIDAD.PLATANITOS" : "Commercial Mont SAC &quot;Platanitos&quot;",
-     "EXPERIENCIA.PERIODO.PLATANITOS" : "Oct 2021 - Jan 2022",
-     "EXPERIENCIA.BREVE.PLATANITOS" : "During the development of the Tutati system, our focus is on managing Human Resources (HR) and logistical processes. We've created a platform that optimizes personnel management and enhances logistical efficiency, providing a comprehensive solution for business needs.",
-     "EXPERIENCIA.TAREAS.PLATANITOS" : [
-        "Analysis of logistical processes for the creation of features and automation of the &quot;Tutati&quot; system.",
-        "Development of new features in the &quot;Tutati&quot; logistics management system.",
-        "Development of modules for delivery tracking.",
-        "Development of modules for warehouse process tracking.",
-        "Development of modules for distribution tracking.",
-        "Code modification and optimization.",
-        "Database maintenance.",
-        "Project developed under the agile SCRUM methodology."
+    "EXPERIENCIA.PERIODO.POLYSOFT": "Oct 2021 - Jan 2022",
+    "EXPERIENCIA.BREVE.POLYSOFT": "In my experience, I have worked on the development of web projects, focusing on creating sites for e-Commerce and blogs. Throughout this process, I have implemented and optimized various key functionalities to provide a comprehensive user experience.",
+    "EXPERIENCIA.TAREAS.POLYSOFT": [
+        "I developed e-commerce and blog projects, both in the main part of the page and in its CMS for personalized client management.",
+        "I developed store functionalities both in the backend with NodeJS and Express, as well as in the frontend with Angular and/or React.",
+        "I applied different UI Frameworks such as BootStrap, Angular Material, Tailwind, Ant Design, ng-zorro for a good frontend presentation and its respective responsive design.",
+        "I implemented various payment gateways such as PayPal and Culqi in the web pages developed for e-commerce.",
+        "I carried out maintenance and refactoring of source code created, according to the new client's needs.",
+        "I deployed projects to production on VPS servers.",
+        "I developed all projects under the agile framework SCRUM.",
+        "Using: Angular, React, HTML, CSS, SASS, NodeJS, Express, MongoDB, JavaScript, TypeScript, GIT, JWT, NPM, Socket.io, SCRUM."
     ],
 
-     "EXPERIENCIA.ENTIDAD.FC" : "FC Accountants & Associates",
-     "EXPERIENCIA.PERIODO.FC" : "Feb 2021 - Jul 2022",
-     "EXPERIENCIA.BREVE.FC" : "I led the development and maintenance of websites for FyF Auditors and FC Accountants, as well as the creation of attendance systems and intranet. Additionally, I successfully implemented APIs from Google Drive and SUNAT, applying my expertise in each phase of the project.",
-     "EXPERIENCIA.TAREAS.FC" : [
-        "Responsible and leader of the systems department.",
-        "Development and maintenance of websites (FyF Auditors and FC Accountants).",
-        "Creation of attendance system for staff.",
-        "Development of intranet system for administrators and clients.",
-        "Implementation of Google Drive and SUNAT API."
+    "EXPERIENCIA.ENTIDAD.PLATANITOS": "Commercial Mont SAC &quot;Platanitos&quot;",
+    "EXPERIENCIA.PERIODO.PLATANITOS": "Oct 2021 - Jan 2022",
+    "EXPERIENCIA.BREVE.PLATANITOS": "During the development of the Tutati system, our focus is on managing Human Resources (HR) and logistical processes. We've created a platform that optimizes personnel management and enhances logistical efficiency, providing a comprehensive solution for business needs.",
+    "EXPERIENCIA.TAREAS.PLATANITOS": [
+        "I analyzed the logistic processes involved in the warehousing area, as well as the internal human resources processes for the creation of functionalities and process automation within the company's 'Tutati' system.",
+        "I developed logistic process modules such as warehouse Inbound/Outbound, product tracking, warehouse inventories, product replenishment, shrinkage, among others, at the backend level with PHP and AWS CodeCommit.",
+        "I developed human resources process modules of the Tutati system, such as task management, worker rewards, remuneration, among others.",
+        "I created and modified queries for the necessary consultations in the Tutati system.",
+        "Project developed under the SCRUM agile methodology.",
+        "Using: PHP, AWS (CodeCommit), MySQL, JavaScript, HTML, CSS, GIT, GitHub, BPMN, SCRUM."
     ],
 
-     "EXPERIENCIA.PERIODO.ALIGNET" : "Feb 2018 - Jul 2018",
-     "EXPERIENCIA.BREVE.ALIGNET" : "I developed e-commerce websites with an efficient and secure approach, enhancing the user experience through attractive designs and personalized solutions. Additionally, I implemented advanced technologies to ensure optimal online performance throughout the project.",
-     "EXPERIENCIA.TAREAS.ALIGNET" : [
-        "Deployment of projects to production environments",
-        "Configuration of software for production deployment",
-        "Server configuration",
-        "Maintenance of source code for projects linked to web payment commerce solutions"
+    "EXPERIENCIA.ENTIDAD.FC": "FC Accountants & Associates",
+    "EXPERIENCIA.PERIODO.FC": "Feb 2021 - Jul 2022",
+    "EXPERIENCIA.BREVE.FC": "I led the development and maintenance of websites for FyF Auditors and FC Accountants, as well as the creation of attendance systems and intranet. Additionally, I successfully implemented APIs from Google Drive and SUNAT, applying my expertise in each phase of the project.",
+    "EXPERIENCIA.TAREAS.FC": [
+        "I led the systems area team of the company in its main internal web development projects.",
+        "I analyzed the internal human resources processes of the accounting company to optimize and create functionalities in the intranet system for employees.",
+        "I developed the website for the main company &quot;FC Contadores&quot;, as well as the website for a secondary company, FyF Accounting Auditors.",
+        "I developed the intranet system for employees with features such as employee check-in and check-out, task tracking, goal achievements, among others.",
+        "I developed the intranet system for administrators and clients with functionalities including self-analysis of income and expenses, management of accounting documentation, document reception, among others.",
+        "I implemented Google Drive APIs for managing client and company documentation, and the SUNAT API for inquiries regarding RUC, DNI, among other indispensable information.",
+        "I managed the MySQL database for proper functioning and data tracking, creating queries for subsequent reading of search results, and company KPIs.",
+        "I utilized tools such as Wordpress, PHP, JavaScript, JQuery, HTML, CSS, AJAX, GIT.",
+        "Wordpress plugins used: Elementor, Slider Revolution, Yoast SEO, Google Tag Manager, MailChimp, etc."
     ],
 
-     "EXPERIENCIA.ENTIDAD.FOTOLATINO" : "Photo Latino Productions",
-     "EXPERIENCIA.PERIODO.FOTOLATINO" : "Jun 2016 - Apr 2017",
-     "EXPERIENCIA.BREVE.FOTOLATINO" : "In my involvement with Foto Latinos Producciones, I built the website aiming to provide a visually appealing and functional platform that captured its distinctive identity. I integrated advanced technologies to ensure optimal online performance and an intuitive user experience, collaborating closely with the team to achieve these goals.",
-     "EXPERIENCIA.TAREAS.FOTOLATINO" : [
-        "Website maintenance.",
-        "Installation, configuration, administration, and maintenance of computer equipment.",
-        "Monitoring of information and photographic material backups.",
-        "Data recovery.",
-        "Installation, activation, and software updates."
-     ],
+    "EXPERIENCIA.PERIODO.ALIGNET": "Feb 2018 - Jul 2018",
+    "EXPERIENCIA.BREVE.ALIGNET": "I developed e-commerce websites with an efficient and secure approach, enhancing the user experience through attractive designs and personalized solutions. Additionally, I implemented advanced technologies to ensure optimal online performance throughout the project.",
+    "EXPERIENCIA.TAREAS.ALIGNET": [
+        "I maintained source code for projects related to web payment commerce solutions.",
+        "I participated in the design and definition of secure payment products and company products.",
+        "Using: Java, Java SpringBoot, Oracle.",
+        "Project developed under the SCRUM agile methodology."
+    ],
 
-     "ESTUDIOS.TITLE" : "What did I study? 🤨",
-     "ESTUDIOS.SUBTITLE" : "I leave you a brief summary here",
+    "EXPERIENCIA.ENTIDAD.FOTOLATINO": "Photo Latino Productions",
+    "EXPERIENCIA.PERIODO.FOTOLATINO": "Jun 2016 - Apr 2017",
+    "EXPERIENCIA.BREVE.FOTOLATINO": "In my involvement with Foto Latinos Producciones, I built the website aiming to provide a visually appealing and functional platform that captured its distinctive identity. I integrated advanced technologies to ensure optimal online performance and an intuitive user experience, collaborating closely with the team to achieve these goals.",
+    "EXPERIENCIA.TAREAS.FOTOLATINO": [
+        "I maintained the website of the photographic company, as well as managed the content displayed on it.",
+        "I managed and executed the installation, configuration, administration, and maintenance of computer equipment.",
+        "I monitored backups of information and photographic material from various branches.",
+        "I managed the installation, activation, and update of essential software for the company.",
+        "I used the tools: Wordpress, Elementor, Slider Revolution, PHP, CSS."
+    ],
 
-     "ESTUDIOS.ENTIDAD.UPN" : "Private University of the North",
+    "ESTUDIOS.TITLE": "What did I study? 🤨",
+    "ESTUDIOS.SUBTITLE": "I leave you a brief summary here",
 
-     "ESTUDIOS.MAESTRIA.TITULO" : "Master's in Systems Engineering",
-     "ESTUDIOS.MAESTRIA.PERIODO" : "Present Time",
-     "ESTUDIOS.MAESTRIA.SKILLS" : [
+    "ESTUDIOS.ENTIDAD.UPN": "Private University of the North",
+
+    "ESTUDIOS.MAESTRIA.TITULO": "Master's in Systems Engineering",
+    "ESTUDIOS.MAESTRIA.PERIODO": "Present Time",
+    "ESTUDIOS.MAESTRIA.SKILLS": [
         "Process and Quality Management",
         "Specialization in Information Security Management Systems"
-     ],
+    ],
 
-    
-
-     "ESTUDIOS.DIPLOMADO.TITULO" : "Diploma in Processes and Continuous Improvement with a Mention in Business Digital Transformation",
-     "ESTUDIOS.DIPLOMADO.PERIODO" : "Mar 2021 - Sep 2022",
-     "ESTUDIOS.DIPLOMADO.SKILLS" : [
+    "ESTUDIOS.DIPLOMADO.TITULO": "Diploma in Processes and Continuous Improvement with a Mention in Business Digital Transformation",
+    "ESTUDIOS.DIPLOMADO.PERIODO": "Mar 2021 - Sep 2022",
+    "ESTUDIOS.DIPLOMADO.SKILLS": [
         "Process management and improvement",
         "Quality indicators",
         "ISO 9001 standard",
         "Continuous improvement and organizational agility",
         "Technologies for operations management"
-     ],
+    ],
 
-     "ESTUDIOS.BACHILLER.TITULO" : "Bachelor's in Systems Engineering",
-     "ESTUDIOS.BACHILLER.PERIODO" : "Mar 2016 - Jul 2021",
-     "ESTUDIOS.BACHILLER.SKILLS" : [
+    "ESTUDIOS.BACHILLER.TITULO": "Bachelor's in Systems Engineering",
+    "ESTUDIOS.BACHILLER.PERIODO": "Mar 2016 - Jul 2021",
+    "ESTUDIOS.BACHILLER.SKILLS": [
         "Proficiency in C++ programming language",
         "Familiarity with RUP and SCRUM methodologies",
         "Understanding of UML",
         "Knowledge of MySQL and PL/SQL databases",
         "Experience with Linux and Windows Server operating systems"
-     ]
-
+    ]
 }
